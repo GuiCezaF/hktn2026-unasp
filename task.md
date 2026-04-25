@@ -16,11 +16,11 @@ Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já exist
 - [x] **T2.2 - Importar e Registrar Tools no wxO:** Importar os arquivos YAML no wxO para a toolset do agente principal. ✅ 2026-04-25
 - [x] **T2.3 - Criar Agente Colaborador (Matcher de Voluntários):** Configurar o VolunteerMatcher no wxO e associar sua Tool, adicionando-o como colaborador do agente principal. ✅ 2026-04-25
 - [x] **T2.4 - Testes de Fluxo Completo no wxO:** Testar todos os fluxos e documentar resultados em `docs/test-results.md`. ✅ 2026-04-25
-
+- [ ] **T2.5 - Registro Automático de Incidente:** Criar tool `incident_registrar.yaml` e endpoint na API para evitar que o usuário digite o ID.
 ## Marco 3: Fluxos da Demo no WhatsApp
 - [x] **T3.1 - Fluxos e Roteiros da Demo no WhatsApp:** Validar a formatação de mensagens, tabelas e fallback no canal Twilio/WhatsApp do wxO. ✅ 2026-04-25
 - [ ] **T3.2 - Plano de Contingência:** Preparar ambiente de fallback no browser caso o WhatsApp falhe no momento da gravação.
-
+- [ ] **T3.3 - Notificação Ativa de Voluntários via WhatsApp:** Criar tool `volunteer_notifier.yaml` e endpoint usando Twilio API para enviar o alerta aos celulares dos voluntários.
 ## Marco 4: Entrega e Demo
 - [ ] **T4.1 - README e Documentação Final:** Atualizar o README com arquitetura e problema. Criar `.gitignore` e `.env.example`.
 - [ ] **T4.2 - Checklist Pré-Gravação:** Validar se a API mock está online, ferramentas wxO estão ativas e fluxos não têm falhas.

@@ -399,6 +399,16 @@ flowchart LR
 
 ---
 
+### T2.5 -- Tool de Registro Automático de Incidente
+
+**Descricao:** Criar o endpoint `POST /incidents` no servidor FastAPI e a respectiva tool `incident_registrar.yaml`. O agente usará esta ferramenta para gerar um `incident_id` no banco de dados com base na descrição inicial, eliminando a necessidade de pedir o ID para o usuário.
+
+**Sugestoes de implementacao:**
+- Endpoint deve receber a descrição e retornar o `incident_id` gerado (ex: `inc-004`).
+- Agente Principal chamará essa tool logo após a classificação.
+
+---
+
 ## Marco 3 -- Fluxos da Demo no WhatsApp (Estimativa: 1-2h)
 
 > [!NOTE]
@@ -430,6 +440,17 @@ flowchart LR
 - Gravar demo usando o **chat do wxO no navegador** como backup
 - No README documentar que WhatsApp via Twilio e o canal de producao
 - Garantir que o video mostre: agente funcionando, tools sendo chamadas, diagrama da arquitetura
+
+---
+
+### T3.3 -- Notificação Ativa de Voluntários via WhatsApp
+
+**Descricao:** Implementar o envio real de mensagens de alerta pelo WhatsApp para os voluntários usando a API do Twilio.
+
+**Sugestoes de implementacao:**
+- Criar endpoint `POST /volunteers/notify` no FastAPI que recebe a lista de IDs de voluntários e os dados do incidente.
+- O endpoint usará a API oficial do Twilio (`twilio-python`) para disparar as mensagens no WhatsApp dos voluntários.
+- Criar a tool `volunteer_notifier.yaml` para o wxO, que será chamada pelo Agente Principal (ou Matcher) para aprovar e disparar a convocação.
 
 ---
 
