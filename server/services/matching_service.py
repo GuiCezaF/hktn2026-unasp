@@ -21,8 +21,22 @@ class MatchingService:
                 continue
 
             volunteer_skills = set(volunteer.skills)
-            # Match if they have at least one required skill
-            if required_skills.intersection(volunteer_skills):
-                matched_volunteers.append(volunteer)
+            matching_skills = required_skills.intersection(volunteer_skills)
+            
+            if matching_skills:
+                # Skill match ratio (weight 0.7)
+                skill_score = len(matching_skills) / len(required_skills)
+                
+                # Proximity (weight 0.3) - Bonus if same neighborhood
+                proximity_score = 1.0 if volunteer.location.neighborhood == incident.location.neighborhood else 0.5
+                
+                total_score = (skill_score * 0.7) + (proximity_score * 0.3)
+                
+                matched_volunteers.append({
+                    "volunteer": volunteer,
+                    "score": total_score
+                })
 
-        return matched_volunteers
+        # Sort by score descending and return Volunteer objects
+        matched_volunteers.sort(key=lambda x: x["score"], reverse=True)
+        return [item["volunteer"] for item in matched_volunteers]

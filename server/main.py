@@ -1,8 +1,11 @@
 import os
+from pathlib import Path
 from typing import List
 from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
-load_dotenv()
+
+env_path = Path(__file__).parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 from twilio.rest import Client
 
@@ -53,12 +56,16 @@ def get_risk_areas():
 def classify_incident(request: ClassificationRequest):
     # Mock behavior: return a high severity if "landslide" or "collapse" is in description
     desc_lower = request.description.lower()
-    if "landslide" in desc_lower or "collapse" in desc_lower:
+    # Adicionado suporte a termos em português
+    is_critical = any(word in desc_lower for word in ["landslide", "collapse", "deslizamento", "desabar", "soterramento"])
+    is_moderate = any(word in desc_lower for word in ["erosion", "crack", "erosão", "rachadura", "fenda"])
+
+    if is_critical:
         return ClassificationResponse(
             severity="critical",
             required_skills=["search_and_rescue", "first_aid", "structural_engineering"]
         )
-    elif "erosion" in desc_lower or "crack" in desc_lower:
+    elif is_moderate:
         return ClassificationResponse(
             severity="moderate",
             required_skills=["structural_engineering", "gis_mapping"]
@@ -86,11 +93,15 @@ def notify_volunteers(request: NotifyRequest):
         raise HTTPException(status_code=404, detail="Incident not found")
 
     volunteers_to_notify = []
-    for vid in request.volunteer_ids:
+    for identifier in request.volunteer_ids:
+        found = False
         for v in data_service.get_all_volunteers():
-            if v.id == vid:
+            if v.id == identifier or v.name.lower() == identifier.lower():
                 volunteers_to_notify.append(v)
+                found = True
                 break
+        if not found:
+            print(f"Aviso: Voluntário '{identifier}' não encontrado.")
 
     if not volunteers_to_notify:
         raise HTTPException(status_code=404, detail="No valid volunteers found")
@@ -100,6 +111,13 @@ def notify_volunteers(request: NotifyRequest):
     from_number = os.environ.get("TWILIO_WHATSAPP_NUMBER")
 
     if not account_sid or not auth_token or not from_number:
+        # Debug log
+        missing = []
+        if not account_sid: missing.append("TWILIO_ACCOUNT_SID")
+        if not auth_token: missing.append("TWILIO_AUTH_TOKEN")
+        if not from_number: missing.append("TWILIO_WHATSAPP_NUMBER")
+        print(f"ERRO: Credenciais do Twilio incompletas no .env: {', '.join(missing)}")
+        
         # Modo mock se não tiver credenciais
         return NotifyResponse(status="mock_success_missing_credentials", notified_count=len(volunteers_to_notify))
 
