@@ -1,0 +1,80 @@
+[
+  {
+    "id": "inc-001",
+    "title": "Landslide at Rua das Flores - Brasilandia",
+    "description": "Major landslide reported on Rua das Flores, Brasilandia district. Approximately 3 residential buildings are at imminent risk of collapse. Heavy rain has been falling for 48 hours. Multiple families need immediate evacuation. The terrain shows visible cracks extending approximately 50 meters along the hillside. Local residents report hearing cracking sounds from the ground. At least 15 people are believed to be trapped or at risk.",
+    "location": {
+      "lat": -23.4620,
+      "lng": -46.6720,
+      "address": "Rua das Flores, 450 - Brasilandia",
+      "neighborhood": "Brasilandia",
+      "city": "Sao Paulo",
+      "reference": "Near Escola Municipal Brasilandia"
+    },
+    "reported_at": "2026-04-27T08:30:00-03:00",
+    "reporter": {
+      "name": "Coordenador Regional - Defesa Civil SP",
+      "contact": "coordenador@demo.gov.br"
+    },
+    "expected_severity": "critical",
+    "required_skills": ["search_and_rescue", "first_aid", "structural_engineering", "drone_operator", "psychological_support"],
+    "affected_people": 45,
+    "affected_buildings": 3,
+    "weather_conditions": "Heavy rain, forecast for 24 more hours",
+    "access_conditions": "Partial road blockage. Vehicle access limited to 200m from the site.",
+    "status": "active",
+    "notes": "This is the primary demo scenario (happy path). Should trigger CRITICAL classification and mobilize 5+ volunteers."
+  },
+  {
+    "id": "inc-002",
+    "title": "Soil erosion at Jardim Angela hillside",
+    "description": "Moderate soil erosion observed on a hillside in Jardim Angela. Two houses show foundation cracks. No immediate risk of collapse but the area needs monitoring. Rain has stopped but the soil is saturated. Local community leader reported the issue. No injuries reported so far.",
+    "location": {
+      "lat": -23.6780,
+      "lng": -46.7380,
+      "address": "Rua Esperanca, 220 - Jardim Angela",
+      "neighborhood": "Jardim Angela",
+      "city": "Sao Paulo",
+      "reference": "Near UBS Jardim Angela"
+    },
+    "reported_at": "2026-04-27T10:15:00-03:00",
+    "reporter": {
+      "name": "Lider Comunitario - Jardim Angela",
+      "contact": "lider.jardim@demo.org"
+    },
+    "expected_severity": "moderate",
+    "required_skills": ["structural_engineering", "gis_mapping", "communication"],
+    "affected_people": 12,
+    "affected_buildings": 2,
+    "weather_conditions": "Cloudy, no rain. Soil saturated from previous days.",
+    "access_conditions": "Full vehicle access. Narrow streets.",
+    "status": "monitoring",
+    "notes": "Secondary demo scenario. Should trigger MODERATE classification. Good for showing different severity levels."
+  },
+  {
+    "id": "inc-003",
+    "title": "Preventive inspection at Paraisopolis slope",
+    "description": "Request for preventive inspection of a slope in Paraisopolis community. Recent rains have caused concern among residents but no visible damage yet. The area has a history of minor landslides during heavy rain seasons. Community requests technical assessment.",
+    "location": {
+      "lat": -23.6120,
+      "lng": -46.7270,
+      "address": "Rua Itajuibe, 100 - Paraisopolis",
+      "neighborhood": "Paraisopolis",
+      "city": "Sao Paulo",
+      "reference": "Near Centro Comunitario Paraisopolis"
+    },
+    "reported_at": "2026-04-27T14:00:00-03:00",
+    "reporter": {
+      "name": "Associacao de Moradores Paraisopolis",
+      "contact": "associacao@demo.org"
+    },
+    "expected_severity": "low",
+    "required_skills": ["gis_mapping", "structural_engineering"],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "Clear sky. Rain forecast for next 3 days.",
+    "access_conditions": "Good vehicle access.",
+    "status": "pending_assessment",
+    "notes": "Tertiary scenario. Should trigger LOW classification. Demonstrates preventive use of the system."
+  }
+]

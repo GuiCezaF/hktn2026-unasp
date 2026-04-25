@@ -1,0 +1,16 @@
+{
+  "images": [
+    {
+      "filename": "cenario_01.jpg",
+      "description": "Simulated aerial view of a landslide affecting residential buildings on a hillside in an urban area. Used for demo scenario inc-001 (critical severity).",
+      "scenario_id": "inc-001",
+      "fictional": true
+    },
+    {
+      "filename": "cenario_02.jpg",
+      "description": "Simulated ground-level view of soil erosion and foundation cracks on a moderate hillside. Used for demo scenario inc-002 (moderate severity).",
+      "scenario_id": "inc-002",
+      "fictional": true
+    }
+  ]
+}

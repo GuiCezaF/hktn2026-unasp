@@ -1,0 +1,187 @@
+[
+  {
+    "id": "ar-001",
+    "name": "Encosta Brasilandia - Setor Norte",
+    "location": {
+      "lat": -23.4620,
+      "lng": -46.6720,
+      "neighborhood": "Brasilandia",
+      "city": "Sao Paulo"
+    },
+    "risk_score": 0.92,
+    "risk_level": "very_high",
+    "slope_angle_degrees": 38,
+    "soil_type": "colluvial_clay",
+    "vegetation_cover_percent": 15,
+    "drainage_condition": "poor",
+    "population_density": "high",
+    "buildings_in_area": 45,
+    "people_in_area": 180,
+    "history": [
+      {
+        "date": "2024-02-15",
+        "event": "Minor landslide, 2 houses damaged",
+        "severity": "moderate"
+      },
+      {
+        "date": "2023-01-20",
+        "event": "Major landslide, 5 houses destroyed, 3 injuries",
+        "severity": "critical"
+      },
+      {
+        "date": "2021-03-10",
+        "event": "Soil erosion, preventive evacuation of 20 people",
+        "severity": "moderate"
+      }
+    ],
+    "last_inspection": "2025-11-20",
+    "recommended_actions": [
+      "Install slope monitoring sensors",
+      "Improve drainage system",
+      "Relocate 12 families in highest risk zone"
+    ],
+    "notes": "Critical area. Matches inc-001 scenario location."
+  },
+  {
+    "id": "ar-002",
+    "name": "Morro do Jardim Angela",
+    "location": {
+      "lat": -23.6780,
+      "lng": -46.7380,
+      "neighborhood": "Jardim Angela",
+      "city": "Sao Paulo"
+    },
+    "risk_score": 0.65,
+    "risk_level": "high",
+    "slope_angle_degrees": 28,
+    "soil_type": "lateritic_clay",
+    "vegetation_cover_percent": 40,
+    "drainage_condition": "moderate",
+    "population_density": "medium",
+    "buildings_in_area": 22,
+    "people_in_area": 85,
+    "history": [
+      {
+        "date": "2024-12-05",
+        "event": "Minor soil erosion after heavy rain",
+        "severity": "low"
+      },
+      {
+        "date": "2022-02-28",
+        "event": "Foundation cracks in 3 houses",
+        "severity": "moderate"
+      }
+    ],
+    "last_inspection": "2025-08-14",
+    "recommended_actions": [
+      "Reinforce retaining walls",
+      "Plant native vegetation on exposed slopes",
+      "Quarterly geotechnical monitoring"
+    ],
+    "notes": "Moderate risk. Matches inc-002 scenario location."
+  },
+  {
+    "id": "ar-003",
+    "name": "Encosta Paraisopolis - Setor Leste",
+    "location": {
+      "lat": -23.6120,
+      "lng": -46.7270,
+      "neighborhood": "Paraisopolis",
+      "city": "Sao Paulo"
+    },
+    "risk_score": 0.40,
+    "risk_level": "moderate",
+    "slope_angle_degrees": 22,
+    "soil_type": "sandy_clay",
+    "vegetation_cover_percent": 60,
+    "drainage_condition": "adequate",
+    "population_density": "medium",
+    "buildings_in_area": 15,
+    "people_in_area": 55,
+    "history": [
+      {
+        "date": "2023-04-12",
+        "event": "Small soil slump, no damage",
+        "severity": "low"
+      }
+    ],
+    "last_inspection": "2026-01-10",
+    "recommended_actions": [
+      "Maintain vegetation cover",
+      "Annual geotechnical inspection",
+      "Community awareness training"
+    ],
+    "notes": "Lower risk but monitored due to community density. Matches inc-003 scenario."
+  },
+  {
+    "id": "ar-004",
+    "name": "Serra da Cantareira - Acesso Sul",
+    "location": {
+      "lat": -23.4430,
+      "lng": -46.6350,
+      "neighborhood": "Trememble",
+      "city": "Sao Paulo"
+    },
+    "risk_score": 0.78,
+    "risk_level": "high",
+    "slope_angle_degrees": 35,
+    "soil_type": "residual_gneiss",
+    "vegetation_cover_percent": 70,
+    "drainage_condition": "moderate",
+    "population_density": "low",
+    "buildings_in_area": 8,
+    "people_in_area": 30,
+    "history": [
+      {
+        "date": "2025-01-18",
+        "event": "Road collapse on access route, repaired in 5 days",
+        "severity": "moderate"
+      },
+      {
+        "date": "2023-03-05",
+        "event": "Debris flow during storm, road blocked for 12 hours",
+        "severity": "moderate"
+      }
+    ],
+    "last_inspection": "2025-09-22",
+    "recommended_actions": [
+      "Install early warning rain gauges",
+      "Reinforce road embankments",
+      "Establish evacuation routes"
+    ],
+    "notes": "Natural terrain risk. Lower population but critical access road."
+  },
+  {
+    "id": "ar-005",
+    "name": "Morro do Piolho - Pirituba",
+    "location": {
+      "lat": -23.4850,
+      "lng": -46.7150,
+      "neighborhood": "Pirituba",
+      "city": "Sao Paulo"
+    },
+    "risk_score": 0.55,
+    "risk_level": "moderate",
+    "slope_angle_degrees": 25,
+    "soil_type": "colluvial_sand",
+    "vegetation_cover_percent": 35,
+    "drainage_condition": "poor",
+    "population_density": "medium",
+    "buildings_in_area": 18,
+    "people_in_area": 70,
+    "history": [
+      {
+        "date": "2024-06-10",
+        "event": "Water seepage in retaining wall",
+        "severity": "low"
+      }
+    ],
+    "last_inspection": "2025-07-30",
+    "recommended_actions": [
+      "Repair retaining wall drainage",
+      "Remove irregular constructions near slope edge",
+      "Biannual monitoring"
+    ],
+    "notes": "Moderate risk due to poor drainage and informal construction."
+  }
+]

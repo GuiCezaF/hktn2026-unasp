@@ -1,0 +1,250 @@
+[
+  {
+    "id": "1",
+    "name": "Ana Silva",
+    "age": 34,
+    "phone": "+5511999990001",
+    "email": "ana.silva@demo.org",
+    "skills": [
+      "first_aid",
+      "logistics"
+    ],
+    "certifications": [
+      "SAMU Basic Life Support",
+      "Red Cross First Responder"
+    ],
+    "location": {
+      "lat": -23.5505,
+      "lng": -46.6340,
+      "neighborhood": "Se",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 5,
+    "past_deployments": 12,
+    "languages": [
+      "pt",
+      "en"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Experienced in flood and landslide response. Team leader certified."
+  },
+  {
+    "id": "2",
+    "name": "Carlos Mendes",
+    "age": 41,
+    "phone": "+5511999990002",
+    "email": "carlos.mendes@demo.org",
+    "skills": [
+      "structural_engineering",
+      "search_and_rescue"
+    ],
+    "certifications": [
+      "CREA Civil Engineering",
+      "USAR Level 2"
+    ],
+    "location": {
+      "lat": -23.5200,
+      "lng": -46.6100,
+      "neighborhood": "Santana",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "weekends_and_evenings",
+    "experience_years": 10,
+    "past_deployments": 25,
+    "languages": [
+      "pt"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Structural assessment specialist. Experienced with post-landslide building safety evaluation."
+  },
+  {
+    "id": "3",
+    "name": "Beatriz Oliveira",
+    "age": 28,
+    "phone": "+5511999990003",
+    "email": "beatriz.oliveira@demo.org",
+    "skills": [
+      "psychological_support",
+      "communication"
+    ],
+    "certifications": [
+      "CRP Psychology License",
+      "Crisis Intervention Training"
+    ],
+    "location": {
+      "lat": -23.5630,
+      "lng": -46.6540,
+      "neighborhood": "Liberdade",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 3,
+    "past_deployments": 7,
+    "languages": [
+      "pt",
+      "en",
+      "es"
+    ],
+    "transport": "public_transport",
+    "notes": "Specializes in trauma support for disaster victims. Fluent in three languages for diverse community outreach."
+  },
+  {
+    "id": "4",
+    "name": "Diego Nascimento",
+    "age": 31,
+    "phone": "+5511999990004",
+    "email": "diego.nascimento@demo.org",
+    "skills": [
+      "drone_operator",
+      "gis_mapping"
+    ],
+    "certifications": [
+      "ANAC Drone Pilot License",
+      "QGIS Professional"
+    ],
+    "location": {
+      "lat": -23.5870,
+      "lng": -46.6580,
+      "neighborhood": "Vila Mariana",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 4,
+    "past_deployments": 9,
+    "languages": [
+      "pt",
+      "en"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Operates DJI Mavic 3 for aerial mapping. Produces risk maps within 2 hours of deployment."
+  },
+  {
+    "id": "5",
+    "name": "Fernanda Costa",
+    "age": 37,
+    "phone": "+5511999990005",
+    "email": "fernanda.costa@demo.org",
+    "skills": [
+      "first_aid",
+      "search_and_rescue"
+    ],
+    "certifications": [
+      "Firefighter Volunteer Cert",
+      "Wilderness First Aid"
+    ],
+    "location": {
+      "lat": -23.5100,
+      "lng": -46.6250,
+      "neighborhood": "Tucuruvi",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "weekends_and_evenings",
+    "experience_years": 8,
+    "past_deployments": 20,
+    "languages": [
+      "pt"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Volunteer firefighter with extensive field rescue experience in hillside terrain."
+  },
+  {
+    "id": "6",
+    "name": "Gabriel Santos",
+    "age": 25,
+    "phone": "+5511999990006",
+    "email": "gabriel.santos@demo.org",
+    "skills": [
+      "logistics",
+      "communication"
+    ],
+    "certifications": [
+      "Supply Chain Management",
+      "Ham Radio License"
+    ],
+    "location": {
+      "lat": -23.5450,
+      "lng": -46.6420,
+      "neighborhood": "Bela Vista",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 2,
+    "past_deployments": 4,
+    "languages": [
+      "pt",
+      "en"
+    ],
+    "transport": "motorcycle",
+    "notes": "Coordinates supply distribution. Ham radio certified for communication in areas without cell coverage."
+  },
+  {
+    "id": "7",
+    "name": "Helena Rodrigues",
+    "age": 45,
+    "phone": "+5511999990007",
+    "email": "helena.rodrigues@demo.org",
+    "skills": [
+      "gis_mapping",
+      "structural_engineering"
+    ],
+    "certifications": [
+      "CREA Geotechnical Engineering",
+      "ArcGIS Professional"
+    ],
+    "location": {
+      "lat": -23.5330,
+      "lng": -46.6250,
+      "neighborhood": "Casa Verde",
+      "city": "Sao Paulo"
+    },
+    "available": false,
+    "availability_hours": "none",
+    "experience_years": 15,
+    "past_deployments": 35,
+    "languages": [
+      "pt",
+      "en",
+      "fr"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Geotechnical engineer. Expert in slope stability analysis. Currently deployed at another site."
+  },
+  {
+    "id": "8",
+    "name": "Igor Ferreira",
+    "age": 29,
+    "phone": "+5511999990008",
+    "email": "igor.ferreira@demo.org",
+    "skills": [
+      "drone_operator",
+      "communication",
+      "logistics"
+    ],
+    "certifications": [
+      "ANAC Drone Pilot License",
+      "Emergency Communications Operator"
+    ],
+    "location": {
+      "lat": -23.4950,
+      "lng": -46.6180,
+      "neighborhood": "Jardim Sao Paulo",
+      "city": "Sao Paulo"
+    },
+    "available": true,
+    "availability_hours": "weekends_and_evenings",
+    "experience_years": 3,
+    "past_deployments": 6,
+    "languages": [
+      "pt"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Drone pilot with night-flight certification. Also trained in emergency radio communications."
+  }
+]
