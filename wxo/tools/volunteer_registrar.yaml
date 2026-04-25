@@ -1,0 +1,64 @@
+openapi: 3.0.0
+info:
+  title: Volunteer Registrar
+  version: 1.0.0
+  description: Registra novos voluntários no sistema através do Agente.
+servers:
+  - url: https://dbe0-201-93-250-33.ngrok-free.app
+paths:
+  /volunteers:
+    post:
+      operationId: createVolunteer
+      summary: Cadastra um novo voluntário.
+      description: >
+        O Agente deve usar esta ferramenta para cadastrar pessoas que desejam se voluntariar
+        durante a conversa, coletando nome, idade, telefone, e-mail, habilidades e bairro.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - age
+                - phone
+                - email
+                - skills
+                - neighborhood
+              properties:
+                name:
+                  type: string
+                  description: Nome completo do voluntário.
+                age:
+                  type: integer
+                  description: Idade do voluntário.
+                phone:
+                  type: string
+                  description: Telefone de contato (preferencialmente WhatsApp).
+                email:
+                  type: string
+                  description: E-mail de contato.
+                skills:
+                  type: array
+                  items:
+                    type: string
+                  description: Lista de habilidades (ex. first_aid, logistics, search_and_rescue).
+                neighborhood:
+                  type: string
+                  description: Bairro de residência em Hortolândia.
+                city:
+                  type: string
+                  default: Hortolandia
+      responses:
+        '200':
+          description: Voluntário cadastrado com sucesso.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  volunteer_id:
+                    type: string
+                  status:
+                    type: string

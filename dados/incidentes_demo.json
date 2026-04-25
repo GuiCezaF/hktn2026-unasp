@@ -176,5 +176,388 @@
     "access_conditions": "unknown",
     "status": "open",
     "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-007",
+    "title": "Incidente Automático - low",
+    "description": "Deslizamento na Rua das Flores, bairro Brasilandia, 3 prédios em risco, 15 pessoas possivelmente presas, chuva forte",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua das Flores, Brasilandia",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "low",
+    "required_skills": [
+      "gis_mapping"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-008",
+    "title": "Incidente Automático - low",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaça desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "low",
+    "required_skills": [
+      "gis_mapping"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-009",
+    "title": "Incidente Automático - low",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaça desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "low",
+    "required_skills": [
+      "gis_mapping"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-010",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaçando desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-011",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaçando desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-012",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaça desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-013",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaçando desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-014",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaça desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-015",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, muro de arrimo ameaçando desabar.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-016",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra com muro instável ameaçando casa, ~3 pessoas dentro.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Luiz da Costa Camargo, Remanso Campineiro",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "logistics"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-017",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra com muro instável, risco de colapso sobre casa com aproximadamente 3 pessoas dentro.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Luiz da Costa Camargo, Remanso Campineiro",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-018",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Luiz da Costa Camargo, Remanso Campineiro",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-019",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra na Rua Luiz da Costa Camargo, Remanso Campineiro. Muro ameaçando desabar, ~3 pessoas necessitando de ajuda.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Luiz da Costa Camargo, Remanso Campineiro",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "search_and_rescue",
+      "first_aid",
+      "structural_engineering"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
   }
 ]

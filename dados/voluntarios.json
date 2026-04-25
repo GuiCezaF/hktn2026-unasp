@@ -14,10 +14,12 @@
       "Red Cross First Responder"
     ],
     "location": {
-      "lat": -22.8710,
-      "lng": -47.2340,
+      "lat": -22.871,
+      "lng": -47.234,
       "neighborhood": "Jardim Amanda",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "full_time",
@@ -45,10 +47,12 @@
       "USAR Level 2"
     ],
     "location": {
-      "lat": -22.8420,
-      "lng": -47.2150,
+      "lat": -22.842,
+      "lng": -47.215,
       "neighborhood": "Parque Hortolandia",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -75,10 +79,12 @@
       "Crisis Intervention Training"
     ],
     "location": {
-      "lat": -22.8580,
-      "lng": -47.2180,
+      "lat": -22.858,
+      "lng": -47.218,
       "neighborhood": "Remanso Campineiro",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "full_time",
@@ -107,10 +113,12 @@
       "QGIS Professional"
     ],
     "location": {
-      "lat": -22.8630,
-      "lng": -47.1950,
+      "lat": -22.863,
+      "lng": -47.195,
       "neighborhood": "Jardim Rosolem",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "full_time",
@@ -138,10 +146,12 @@
       "Wilderness First Aid"
     ],
     "location": {
-      "lat": -22.8350,
-      "lng": -47.2280,
+      "lat": -22.835,
+      "lng": -47.228,
       "neighborhood": "Jardim Novo Angulo",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -168,10 +178,12 @@
       "Ham Radio License"
     ],
     "location": {
-      "lat": -22.8550,
-      "lng": -47.2220,
+      "lat": -22.855,
+      "lng": -47.222,
       "neighborhood": "Bela Vista",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "full_time",
@@ -199,10 +211,12 @@
       "ArcGIS Professional"
     ],
     "location": {
-      "lat": -22.8450,
-      "lng": -47.2100,
+      "lat": -22.845,
+      "lng": -47.21,
       "neighborhood": "Remanso Campineiro",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": false,
     "availability_hours": "none",
@@ -232,10 +246,12 @@
       "Emergency Communications Operator"
     ],
     "location": {
-      "lat": -22.8500,
-      "lng": -47.2300,
+      "lat": -22.85,
+      "lng": -47.23,
       "neighborhood": "Jardim Amanda",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -249,9 +265,9 @@
   },
   {
     "id": "9",
-    "name": "Guilherme Felipe",
+    "name": "Felipe Z",
     "age": 22,
-    "phone": "+5519981734618",
+    "phone": "+5519987624471",
     "email": "contato.guicezafe@gmail.com",
     "skills": [
       "first_aid",
@@ -265,10 +281,12 @@
       "Red Cross First Responder"
     ],
     "location": {
-      "lat": -22.8710,
-      "lng": -47.2340,
+      "lat": -22.871,
+      "lng": -47.234,
       "neighborhood": "Jardim Amanda",
-      "city": "Hortolandia"
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
     },
     "available": true,
     "availability_hours": "full_time",
@@ -280,5 +298,35 @@
     ],
     "transport": "own_vehicle",
     "notes": "Experienced in flood and landslide response. Team leader certified."
+  },
+  {
+    "id": "10",
+    "name": "Guilherme Cezarino Felipe",
+    "age": 22,
+    "phone": "+5519981734618",
+    "email": "contato.guicezafe@gmail.com",
+    "skills": [
+      "primeiros socorros",
+      "logística",
+      "busca e resgate"
+    ],
+    "certifications": [],
+    "location": {
+      "lat": -22.871,
+      "lng": -47.234,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia",
+      "address": null,
+      "reference": null
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 1,
+    "past_deployments": 0,
+    "languages": [
+      "pt"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Cadastrado via Agente wxO."
   }
 ]

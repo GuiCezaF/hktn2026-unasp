@@ -11,7 +11,8 @@ from twilio.rest import Client
 
 from .models import (
     Incident, Volunteer, RiskArea, ClassificationRequest, ClassificationResponse,
-    IncidentCreateRequest, IncidentCreateResponse, NotifyRequest, NotifyResponse
+    IncidentCreateRequest, IncidentCreateResponse, NotifyRequest, NotifyResponse,
+    VolunteerCreateRequest, VolunteerCreateResponse, ImageAnalysisRequest, ImageAnalysisResponse
 )
 from .services.data_service import DataService
 from .services.matching_service import MatchingService
@@ -145,3 +146,41 @@ def notify_volunteers(request: NotifyRequest):
         status="success",
         notified_count=count
     )
+
+@app.post("/volunteers", response_model=VolunteerCreateResponse)
+def create_volunteer(request: VolunteerCreateRequest):
+    volunteer = data_service.create_volunteer(request)
+    return VolunteerCreateResponse(
+        volunteer_id=volunteer.id,
+        status="success"
+    )
+
+@app.post("/analyze-risk", response_model=ImageAnalysisResponse)
+def analyze_risk(request: ImageAnalysisRequest):
+    # Mock de análise de visão computacional
+    url = request.image_url.lower()
+    
+    if "crack" in url or "rachadura" in url or "fenda" in url:
+        return ImageAnalysisResponse(
+            risk_level="high",
+            confidence_score=0.89,
+            detected_issues=["Structural cracks", "Wall instability"],
+            technical_recommendation="Evacuar área imediatamente e acionar engenharia estrutural.",
+            status="success"
+        )
+    elif "landslide" in url or "deslizamento" in url:
+        return ImageAnalysisResponse(
+            risk_level="critical",
+            confidence_score=0.95,
+            detected_issues=["Soil movement", "Slope instability"],
+            technical_recommendation="Risco iminente de soterramento. Isolamento total do perímetro.",
+            status="success"
+        )
+    else:
+        return ImageAnalysisResponse(
+            risk_level="low",
+            confidence_score=0.75,
+            detected_issues=["Minor erosion or no issues detected"],
+            technical_recommendation="Monitorar em caso de chuva forte. Não há risco imediato.",
+            status="success"
+        )

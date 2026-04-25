@@ -82,11 +82,54 @@ class DataService:
         incident = Incident(**incident_data)
         self.incidents.append(incident)
         
-        # Persistência em JSON. Para evitar loops do uvicorn, comente isto 
-        # se não usar a exclusão no --reload
         import json
         incidents_path = os.path.join(self.data_dir, "incidentes_demo.json")
         with open(incidents_path, "w", encoding="utf-8") as f:
             json.dump([i.model_dump() for i in self.incidents], f, indent=2, ensure_ascii=False)
             
         return incident
+    def create_volunteer(self, request) -> Volunteer:
+        new_id = str(len(self.volunteers) + 1)
+        
+        # Mapeamento básico de coordenadas para bairros de Hortolândia
+        coords = {
+            "Jardim Amanda": (-22.871, -47.234),
+            "Parque Hortolandia": (-22.842, -47.215),
+            "Remanso Campineiro": (-22.858, -47.218),
+            "Jardim Rosolem": (-22.863, -47.195),
+            "Jardim Novo Angulo": (-22.835, -47.228)
+        }
+        lat, lng = coords.get(request.neighborhood, (-22.85, -47.22))
+        
+        volunteer_data = {
+            "id": new_id,
+            "name": request.name,
+            "age": request.age,
+            "phone": request.phone,
+            "email": request.email,
+            "skills": request.skills,
+            "certifications": [],
+            "location": {
+                "lat": lat,
+                "lng": lng,
+                "neighborhood": request.neighborhood,
+                "city": request.city
+            },
+            "available": True,
+            "availability_hours": "full_time",
+            "experience_years": 1,
+            "past_deployments": 0,
+            "languages": ["pt"],
+            "transport": "own_vehicle",
+            "notes": "Cadastrado via Agente wxO."
+        }
+        
+        volunteer = Volunteer(**volunteer_data)
+        self.volunteers.append(volunteer)
+        
+        # Persistência
+        volunteers_path = os.path.join(self.data_dir, "voluntarios.json")
+        with open(volunteers_path, "w", encoding="utf-8") as f:
+            json.dump([v.model_dump() for v in self.volunteers], f, indent=2, ensure_ascii=False)
+            
+        return volunteer

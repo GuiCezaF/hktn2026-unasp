@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Registra um novo incidente no sistema gerando o ID automaticamente.
 servers:
-  - url: http://localhost:8000
+  - url: https://dbe0-201-93-250-33.ngrok-free.app
 paths:
   /incidents:
     post:

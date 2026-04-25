@@ -106,3 +106,26 @@ class NotifyRequest(BaseModel):
 class NotifyResponse(BaseModel):
     status: str
     notified_count: int
+
+class VolunteerCreateRequest(BaseModel):
+    name: str
+    age: int
+    phone: str
+    email: str
+    skills: List[str]
+    neighborhood: str
+    city: str = "Hortolandia"
+
+class VolunteerCreateResponse(BaseModel):
+    volunteer_id: str
+    status: str
+
+class ImageAnalysisRequest(BaseModel):
+    image_url: str
+
+class ImageAnalysisResponse(BaseModel):
+    risk_level: str
+    confidence_score: float
+    detected_issues: List[str]
+    technical_recommendation: str
+    status: str

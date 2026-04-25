@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Matches available volunteers to a specific incident based on required skills and location.
 servers:
-  - url: http://localhost:8000
+  - url: https://dbe0-201-93-250-33.ngrok-free.app
     description: Local Mock Server
 paths:
   /volunteers/match/{incident_id}:

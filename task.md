@@ -19,9 +19,26 @@ Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já exist
 - [x] **T2.5 - Registro Automático de Incidente:** Criar tool `incident_registrar.yaml` e endpoint na API para evitar que o usuário digite o ID. ✅ 2026-04-25
 ## Marco 3: Fluxos da Demo no WhatsApp
 - [x] **T3.1 - Fluxos e Roteiros da Demo no WhatsApp:** Validar a formatação de mensagens, tabelas e fallback no canal Twilio/WhatsApp do wxO. ✅ 2026-04-25
-- [ ] **T3.2 - Plano de Contingência:** Preparar ambiente de fallback no browser caso o WhatsApp falhe no momento da gravação.
+- [x] **T3.2 - Plano de Contingência:** Preparar ambiente de fallback no browser caso o WhatsApp falhe no momento da gravação. ✅ 2026-04-25
 - [x] **T3.3 - Notificação Ativa de Voluntários via WhatsApp:** Criar tool `volunteer_notifier.yaml` e endpoint usando Twilio API para enviar o alerta aos celulares dos voluntários. ✅ 2026-04-25
-## Marco 4: Entrega e Demo
-- [ ] **T4.1 - README e Documentação Final:** Atualizar o README com arquitetura e problema. Criar `.gitignore` e `.env.example`.
-- [ ] **T4.2 - Checklist Pré-Gravação:** Validar se a API mock está online, ferramentas wxO estão ativas e fluxos não têm falhas.
-- [ ] **T4.3 - Gravação do Vídeo Demo:** Gravação do vídeo final seguindo o roteiro de 3 minutos.
+
+
+## Marco 4: Funcionalidades Avançadas
+- [x] **T5.1 - Cadastro Autônomo de Voluntários:** Criar endpoint `POST /volunteers` e tool para permitir que novos voluntários se cadastrem conversando com o Agente. ✅ 2026-04-25
+- [ ] **T5.2 - Avaliação de Risco via Imagem:** Implementar tool que recebe uma URL de imagem (enviada pelo WhatsApp), utiliza uma IA de visão (ou mock estruturado) para identificar rachaduras ou deslizamentos e retorna uma recomendação técnica.
+	- [ ] Falta testar
+
+## Marco 5: Entrega e Demo
+- [ ] **T4.1 - README e Documentação Final:** Atualizar o README com arquitetura e problema. Criar `.gitignore` e `.env.example`. (Em progresso: .gitignore e .env.example criados).
+- [ ] **T4.2 - Checklist Pré-Gravação:** Validar se a API mock está online, ferramentas wxO estão ativas e fluxos não têm falhas. ✅ 2026-04-25 (Validados via Agente e WhatsApp).
+
+
+## Marco 6: Entrega Final
+- [ ] **T6.1 - Gravação do Vídeo Demo:** Gravação do vídeo final seguindo o roteiro de 3 minutos. (ÚLTIMO PASSO).
+
+## Notas de Implementação (Pós-Testes)
+- [x] Migração de todos os dados para a região de **Hortolândia - SP**.
+- [x] Implementação de **Scoring e Ranking** de voluntários (Skill match + Proximidade).
+- [x] Suporte a **termos em Português** para classificação de incidentes.
+- [x] Robustez na busca de voluntários (suporte a IDs, nomes e limpeza de prefixos).
+- [x] Otimização de **Instruções (System Prompt)** para evitar formatação indesejada no WhatsApp.

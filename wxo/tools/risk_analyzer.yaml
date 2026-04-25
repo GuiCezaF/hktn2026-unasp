@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Risk Analyzer (Vision AI)
+  version: 1.0.0
+  description: Analisa imagens de áreas de risco para identificar problemas estruturais ou ambientais.
+servers:
+  - url: https://dbe0-201-93-250-33.ngrok-free.app
+paths:
+  /analyze-risk:
+    post:
+      operationId: analyzeRiskImage
+      summary: Analisa uma imagem de risco.
+      description: >
+        O Agente deve usar esta ferramenta quando o usuário enviar uma imagem (ou URL de imagem) 
+        pelo WhatsApp ou chat, pedindo uma avaliação de perigo (ex. rachaduras, deslizamentos).
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - image_url
+              properties:
+                image_url:
+                  type: string
+                  description: URL pública da imagem a ser analisada.
+      responses:
+        '200':
+          description: Análise concluída.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  risk_level:
+                    type: string
+                    description: Nível de risco identificado (low, high, critical).
+                  confidence_score:
+                    type: number
+                  detected_issues:
+                    type: array
+                    items:
+                      type: string
+                  technical_recommendation:
+                    type: string
+                    description: Recomendação técnica baseada na imagem.
+                  status:
+                    type: string

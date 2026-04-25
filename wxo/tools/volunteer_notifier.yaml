@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Dispara alertas para os voluntários via WhatsApp.
 servers:
-  - url: http://localhost:8000
+  - url: https://dbe0-201-93-250-33.ngrok-free.app
 paths:
   /volunteers/notify:
     post:
@@ -31,7 +31,7 @@ paths:
                   type: array
                   items:
                     type: string
-                  description: Lista de IDs dos voluntários selecionados (ex. v1, v2)
+                  description: Lista de IDs dos voluntários selecionados (ex. 1, 2)
                 message_override:
                   type: string
                   description: Opcional. Se quiser enviar uma mensagem personalizada.
