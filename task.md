@@ -13,12 +13,12 @@ Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já exist
 
 ## Marco 2: Núcleo watsonx Orchestrate
 - [x] **T2.1 - Criar Agente Principal + Knowledge Base:** Agente `CrisisCoordinator` criado e Knowledge Base configurada.
-- [ ] **T2.2 - Importar e Registrar Tools no wxO:** Importar os arquivos YAML no wxO para a toolset do agente principal.
-- [ ] **T2.3 - Criar Agente Colaborador (Matcher de Voluntários):** Configurar o VolunteerMatcher no wxO e associar sua Tool, adicionando-o como colaborador do agente principal.
-- [ ] **T2.4 - Testes de Fluxo Completo no wxO:** Testar todos os fluxos e documentar resultados em `docs/test-results.md`.
+- [x] **T2.2 - Importar e Registrar Tools no wxO:** Importar os arquivos YAML no wxO para a toolset do agente principal. ✅ 2026-04-25
+- [x] **T2.3 - Criar Agente Colaborador (Matcher de Voluntários):** Configurar o VolunteerMatcher no wxO e associar sua Tool, adicionando-o como colaborador do agente principal. ✅ 2026-04-25
+- [x] **T2.4 - Testes de Fluxo Completo no wxO:** Testar todos os fluxos e documentar resultados em `docs/test-results.md`. ✅ 2026-04-25
 
 ## Marco 3: Fluxos da Demo no WhatsApp
-- [ ] **T3.1 - Fluxos e Roteiros da Demo no WhatsApp:** Validar a formatação de mensagens, tabelas e fallback no canal Twilio/WhatsApp do wxO.
+- [x] **T3.1 - Fluxos e Roteiros da Demo no WhatsApp:** Validar a formatação de mensagens, tabelas e fallback no canal Twilio/WhatsApp do wxO. ✅ 2026-04-25
 - [ ] **T3.2 - Plano de Contingência:** Preparar ambiente de fallback no browser caso o WhatsApp falhe no momento da gravação.
 
 ## Marco 4: Entrega e Demo
