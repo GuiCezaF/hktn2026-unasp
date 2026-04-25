@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  title: Volunteer Matcher
+  version: 1.0.0
+  description: Matches available volunteers to a specific incident based on required skills and location.
+servers:
+  - url: http://localhost:8000
+    description: Local Mock Server
+paths:
+  /volunteers/match/{incident_id}:
+    get:
+      operationId: matchVolunteers
+      summary: Find matching volunteers for an incident
+      description: >
+        Returns a list of volunteers that are the best match for a given incident ID, 
+        considering their skills and geographic proximity.
+      parameters:
+        - name: incident_id
+          in: path
+          required: true
+          description: The ID of the incident to find volunteers for
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of matching volunteers
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    phone:
+                      type: string
+                    email:
+                      type: string
+                    skills:
+                      type: array
+                      items:
+                        type: string
+                    available:
+                      type: boolean
+                    transport:
+                      type: string
+                    location:
+                      type: object
+                      properties:
+                        neighborhood:
+                          type: string
+                        city:
+                          type: string
+                        address:
+                          type: string

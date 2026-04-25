@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Geo Context
+  version: 1.0.0
+  description: Provides geographic context and risk area information for disaster scenarios.
+servers:
+  - url: http://localhost:8000
+    description: Local Mock Server
+paths:
+  /risk-areas:
+    get:
+      operationId: getRiskAreas
+      summary: Get all known risk areas
+      description: >
+        Returns a list of known risk areas with their risk scores, risk levels, and 
+        recommended actions to mitigate disasters in those areas.
+      responses:
+        '200':
+          description: A list of risk areas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    risk_level:
+                      type: string
+                    risk_score:
+                      type: number
+                    location:
+                      type: object
+                      properties:
+                        lat:
+                          type: number
+                        lng:
+                          type: number
+                        neighborhood:
+                          type: string
+                        city:
+                          type: string
+                    recommended_actions:
+                      type: array
+                      items:
+                        type: string

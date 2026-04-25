@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: Incident Classifier
+  version: 1.0.0
+  description: Classifies incident severity and identifies required skills based on the incident description.
+servers:
+  - url: http://localhost:8000
+    description: Local Mock Server
+paths:
+  /incidents/classify:
+    post:
+      operationId: classifyIncident
+      summary: Classify the severity of a crisis incident
+      description: >
+        Receives a text description of an incident and returns severity classification 
+        (critical, moderate, low) along with a list of required skills to respond to it.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - description
+              properties:
+                description:
+                  type: string
+                  description: Text description of the incident
+      responses:
+        '200':
+          description: Classification result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  severity:
+                    type: string
+                    description: The severity of the incident (e.g., critical, moderate, low)
+                  required_skills:
+                    type: array
+                    items:
+                      type: string
+                    description: List of skills required to handle the incident
