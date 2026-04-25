@@ -1,15 +1,15 @@
 [
   {
     "id": "inc-001",
-    "title": "Landslide at Rua das Flores - Brasilandia",
-    "description": "Major landslide reported on Rua das Flores, Brasilandia district. Approximately 3 residential buildings are at imminent risk of collapse. Heavy rain has been falling for 48 hours. Multiple families need immediate evacuation. The terrain shows visible cracks extending approximately 50 meters along the hillside. Local residents report hearing cracking sounds from the ground. At least 15 people are believed to be trapped or at risk.",
+    "title": "Deslizamento no Jardim Amanda",
+    "description": "Grande deslizamento relatado no Jardim Amanda. Aproximadamente 3 prédios residenciais estão em risco iminente de desabamento. Chuva forte cai há 48 horas. Várias famílias precisam de evacuação imediata. O terreno apresenta rachaduras visíveis de aproximadamente 50 metros ao longo da encosta. Moradores relatam ouvir sons de estalos vindos do solo. Acredita-se que pelo menos 15 pessoas estejam presas ou em risco.",
     "location": {
-      "lat": -23.462,
-      "lng": -46.672,
-      "neighborhood": "Brasilandia",
-      "city": "Sao Paulo",
-      "address": "Rua das Flores, 450 - Brasilandia",
-      "reference": "Near Escola Municipal Brasilandia"
+      "lat": -22.872,
+      "lng": -47.235,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450 - Jardim Amanda",
+      "reference": "Próximo à UBS Jardim Amanda"
     },
     "reported_at": "2026-04-27T08:30:00-03:00",
     "reporter": {
@@ -33,15 +33,15 @@
   },
   {
     "id": "inc-002",
-    "title": "Soil erosion at Jardim Angela hillside",
-    "description": "Moderate soil erosion observed on a hillside in Jardim Angela. Two houses show foundation cracks. No immediate risk of collapse but the area needs monitoring. Rain has stopped but the soil is saturated. Local community leader reported the issue. No injuries reported so far.",
+    "title": "Erosão de solo no Parque Hortolandia",
+    "description": "Erosão moderada de solo observada em uma encosta no Parque Hortolandia. Duas casas apresentam rachaduras na fundação. Sem risco imediato de desabamento, mas a área precisa de monitoramento. A chuva parou, mas o solo está saturado. Líder comunitário local relatou o problema. Sem feridos relatados até agora.",
     "location": {
-      "lat": -23.678,
-      "lng": -46.738,
-      "neighborhood": "Jardim Angela",
-      "city": "Sao Paulo",
-      "address": "Rua Esperanca, 220 - Jardim Angela",
-      "reference": "Near UBS Jardim Angela"
+      "lat": -22.843,
+      "lng": -47.216,
+      "neighborhood": "Parque Hortolandia",
+      "city": "Hortolandia",
+      "address": "Rua Esperança, 220 - Parque Hortolandia",
+      "reference": "Próximo à Praça de Eventos"
     },
     "reported_at": "2026-04-27T10:15:00-03:00",
     "reporter": {
@@ -63,15 +63,15 @@
   },
   {
     "id": "inc-003",
-    "title": "Preventive inspection at Paraisopolis slope",
-    "description": "Request for preventive inspection of a slope in Paraisopolis community. Recent rains have caused concern among residents but no visible damage yet. The area has a history of minor landslides during heavy rain seasons. Community requests technical assessment.",
+    "title": "Inspeção preventiva no Jardim Novo Angulo",
+    "description": "Solicitação de inspeção preventiva em uma encosta na comunidade do Jardim Novo Angulo. As chuvas recentes causaram preocupação entre os moradores, mas nenhum dano visível ainda. A área tem histórico de pequenos deslizamentos durante as temporadas de chuvas fortes. A comunidade solicita avaliação técnica.",
     "location": {
-      "lat": -23.612,
-      "lng": -46.727,
-      "neighborhood": "Paraisopolis",
-      "city": "Sao Paulo",
-      "address": "Rua Itajuibe, 100 - Paraisopolis",
-      "reference": "Near Centro Comunitario Paraisopolis"
+      "lat": -22.836,
+      "lng": -47.229,
+      "neighborhood": "Jardim Novo Angulo",
+      "city": "Hortolandia",
+      "address": "Rua das Flores, 100 - Jardim Novo Angulo",
+      "reference": "Próximo à Escola Municipal"
     },
     "reported_at": "2026-04-27T14:00:00-03:00",
     "reporter": {
@@ -95,10 +95,10 @@
     "title": "Incidente Automático - critical",
     "description": "Deslizamento em encosta próximo a escola",
     "location": {
-      "lat": -23.55,
-      "lng": -46.63,
+      "lat": -22.85,
+      "lng": -47.22,
       "neighborhood": "Mock",
-      "city": "São Paulo",
+      "city": "Hortolandia",
       "address": "Rua das Oliveiras, 123",
       "reference": ""
     },
@@ -124,10 +124,10 @@
     "title": "Incidente Automático - critical",
     "description": "Deslizamento em encosta próximo a escola",
     "location": {
-      "lat": -23.55,
-      "lng": -46.63,
+      "lat": -22.85,
+      "lng": -47.22,
       "neighborhood": "Mock",
-      "city": "São Paulo",
+      "city": "Hortolandia",
       "address": "Rua das Oliveiras, 123",
       "reference": ""
     },
@@ -153,10 +153,10 @@
     "title": "Incidente Automático - critical",
     "description": "Deslizamento em encosta próximo a escola",
     "location": {
-      "lat": -23.55,
-      "lng": -46.63,
+      "lat": -22.85,
+      "lng": -47.22,
       "neighborhood": "Mock",
-      "city": "São Paulo",
+      "city": "Hortolandia",
       "address": "Rua das Oliveiras, 123",
       "reference": ""
     },

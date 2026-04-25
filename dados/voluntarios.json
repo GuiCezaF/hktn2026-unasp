@@ -14,10 +14,10 @@
       "Red Cross First Responder"
     ],
     "location": {
-      "lat": -23.5505,
-      "lng": -46.6340,
-      "neighborhood": "Se",
-      "city": "Sao Paulo"
+      "lat": -22.8710,
+      "lng": -47.2340,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "full_time",
@@ -45,10 +45,10 @@
       "USAR Level 2"
     ],
     "location": {
-      "lat": -23.5200,
-      "lng": -46.6100,
-      "neighborhood": "Santana",
-      "city": "Sao Paulo"
+      "lat": -22.8420,
+      "lng": -47.2150,
+      "neighborhood": "Parque Hortolandia",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -75,10 +75,10 @@
       "Crisis Intervention Training"
     ],
     "location": {
-      "lat": -23.5630,
-      "lng": -46.6540,
-      "neighborhood": "Liberdade",
-      "city": "Sao Paulo"
+      "lat": -22.8580,
+      "lng": -47.2180,
+      "neighborhood": "Remanso Campineiro",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "full_time",
@@ -107,10 +107,10 @@
       "QGIS Professional"
     ],
     "location": {
-      "lat": -23.5870,
-      "lng": -46.6580,
-      "neighborhood": "Vila Mariana",
-      "city": "Sao Paulo"
+      "lat": -22.8630,
+      "lng": -47.1950,
+      "neighborhood": "Jardim Rosolem",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "full_time",
@@ -138,10 +138,10 @@
       "Wilderness First Aid"
     ],
     "location": {
-      "lat": -23.5100,
-      "lng": -46.6250,
-      "neighborhood": "Tucuruvi",
-      "city": "Sao Paulo"
+      "lat": -22.8350,
+      "lng": -47.2280,
+      "neighborhood": "Jardim Novo Angulo",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -168,10 +168,10 @@
       "Ham Radio License"
     ],
     "location": {
-      "lat": -23.5450,
-      "lng": -46.6420,
+      "lat": -22.8550,
+      "lng": -47.2220,
       "neighborhood": "Bela Vista",
-      "city": "Sao Paulo"
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "full_time",
@@ -199,10 +199,10 @@
       "ArcGIS Professional"
     ],
     "location": {
-      "lat": -23.5330,
-      "lng": -46.6250,
-      "neighborhood": "Casa Verde",
-      "city": "Sao Paulo"
+      "lat": -22.8450,
+      "lng": -47.2100,
+      "neighborhood": "Remanso Campineiro",
+      "city": "Hortolandia"
     },
     "available": false,
     "availability_hours": "none",
@@ -232,10 +232,10 @@
       "Emergency Communications Operator"
     ],
     "location": {
-      "lat": -23.4950,
-      "lng": -46.6180,
-      "neighborhood": "Jardim Sao Paulo",
-      "city": "Sao Paulo"
+      "lat": -22.8500,
+      "lng": -47.2300,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia"
     },
     "available": true,
     "availability_hours": "weekends_and_evenings",
@@ -246,5 +246,36 @@
     ],
     "transport": "own_vehicle",
     "notes": "Drone pilot with night-flight certification. Also trained in emergency radio communications."
+  },
+  {
+    "id": "9",
+    "name": "Guilherme Felipe",
+    "age": 22,
+    "phone": "+5519981734618",
+    "email": "contato.guicezafe@gmail.com",
+    "skills": [
+      "first_aid",
+      "logistics"
+    ],
+    "certifications": [
+      "SAMU Basic Life Support",
+      "Red Cross First Responder"
+    ],
+    "location": {
+      "lat": -22.8710,
+      "lng": -47.2340,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia"
+    },
+    "available": true,
+    "availability_hours": "full_time",
+    "experience_years": 5,
+    "past_deployments": 12,
+    "languages": [
+      "pt",
+      "en"
+    ],
+    "transport": "own_vehicle",
+    "notes": "Experienced in flood and landslide response. Team leader certified."
   }
 ]

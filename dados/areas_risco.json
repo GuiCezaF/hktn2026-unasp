@@ -1,12 +1,12 @@
 [
   {
     "id": "ar-001",
-    "name": "Encosta Brasilandia - Setor Norte",
+    "name": "Encosta Jardim Amanda",
     "location": {
-      "lat": -23.4620,
-      "lng": -46.6720,
-      "neighborhood": "Brasilandia",
-      "city": "Sao Paulo"
+      "lat": -22.8720,
+      "lng": -47.2350,
+      "neighborhood": "Jardim Amanda",
+      "city": "Hortolandia"
     },
     "risk_score": 0.92,
     "risk_level": "very_high",
@@ -44,12 +44,12 @@
   },
   {
     "id": "ar-002",
-    "name": "Morro do Jardim Angela",
+    "name": "Morro do Parque Hortolandia",
     "location": {
-      "lat": -23.6780,
-      "lng": -46.7380,
-      "neighborhood": "Jardim Angela",
-      "city": "Sao Paulo"
+      "lat": -22.8430,
+      "lng": -47.2160,
+      "neighborhood": "Parque Hortolandia",
+      "city": "Hortolandia"
     },
     "risk_score": 0.65,
     "risk_level": "high",
@@ -82,12 +82,12 @@
   },
   {
     "id": "ar-003",
-    "name": "Encosta Paraisopolis - Setor Leste",
+    "name": "Encosta Jardim Novo Angulo",
     "location": {
-      "lat": -23.6120,
-      "lng": -46.7270,
-      "neighborhood": "Paraisopolis",
-      "city": "Sao Paulo"
+      "lat": -22.8360,
+      "lng": -47.2290,
+      "neighborhood": "Jardim Novo Angulo",
+      "city": "Hortolandia"
     },
     "risk_score": 0.40,
     "risk_level": "moderate",
@@ -115,12 +115,12 @@
   },
   {
     "id": "ar-004",
-    "name": "Serra da Cantareira - Acesso Sul",
+    "name": "Remanso Campineiro - Encosta Sul",
     "location": {
-      "lat": -23.4430,
-      "lng": -46.6350,
-      "neighborhood": "Trememble",
-      "city": "Sao Paulo"
+      "lat": -22.8460,
+      "lng": -47.2110,
+      "neighborhood": "Remanso Campineiro",
+      "city": "Hortolandia"
     },
     "risk_score": 0.78,
     "risk_level": "high",
@@ -153,12 +153,12 @@
   },
   {
     "id": "ar-005",
-    "name": "Morro do Piolho - Pirituba",
+    "name": "Morro do Jardim Rosolem",
     "location": {
-      "lat": -23.4850,
-      "lng": -46.7150,
-      "neighborhood": "Pirituba",
-      "city": "Sao Paulo"
+      "lat": -22.8640,
+      "lng": -47.1960,
+      "neighborhood": "Jardim Rosolem",
+      "city": "Hortolandia"
     },
     "risk_score": 0.55,
     "risk_level": "moderate",

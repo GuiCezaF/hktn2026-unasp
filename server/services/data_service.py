@@ -51,10 +51,10 @@ class DataService:
         
         now_str = "2026-04-25T14:30:00Z"
         location_obj = {
-            "lat": -23.55,
-            "lng": -46.63,
+            "lat": -22.85,
+            "lng": -47.22,
             "neighborhood": "Mock",
-            "city": "São Paulo",
+            "city": "Hortolandia",
             "address": request.location,
             "reference": ""
         }
