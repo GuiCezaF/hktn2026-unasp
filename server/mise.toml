@@ -4,4 +4,4 @@ python = "3.12"
 [tasks.dev]
 description = "Inicia o servidor de desenvolvimento FastAPI"
 dir = ".."
-run = "uvicorn server.main:app --reload"
+run = "uvicorn server.main:app --reload --reload-exclude dados/*"

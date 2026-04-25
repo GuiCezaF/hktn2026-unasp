@@ -45,3 +45,48 @@ class DataService:
 
     def get_all_risk_areas(self) -> List[RiskArea]:
         return self.risk_areas
+
+    def create_incident(self, request) -> Incident:
+        new_id = f"inc-{len(self.incidents) + 1:03d}"
+        
+        now_str = "2026-04-25T14:30:00Z"
+        location_obj = {
+            "lat": -23.55,
+            "lng": -46.63,
+            "neighborhood": "Mock",
+            "city": "São Paulo",
+            "address": request.location,
+            "reference": ""
+        }
+        reporter_obj = {
+            "name": "Agente wxO",
+            "contact": "sistema"
+        }
+        
+        incident_data = {
+            "id": new_id,
+            "title": f"Incidente Automático - {request.expected_severity}",
+            "description": request.description,
+            "location": location_obj,
+            "reported_at": now_str,
+            "reporter": reporter_obj,
+            "expected_severity": request.expected_severity,
+            "required_skills": request.required_skills,
+            "affected_people": 0,
+            "affected_buildings": 0,
+            "weather_conditions": "unknown",
+            "access_conditions": "unknown",
+            "status": "open",
+            "notes": "Criado via ferramenta do wxO."
+        }
+        incident = Incident(**incident_data)
+        self.incidents.append(incident)
+        
+        # Persistência em JSON. Para evitar loops do uvicorn, comente isto 
+        # se não usar a exclusão no --reload
+        import json
+        incidents_path = os.path.join(self.data_dir, "incidentes_demo.json")
+        with open(incidents_path, "w", encoding="utf-8") as f:
+            json.dump([i.model_dump() for i in self.incidents], f, indent=2, ensure_ascii=False)
+            
+        return incident

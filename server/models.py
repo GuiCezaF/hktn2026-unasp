@@ -83,3 +83,26 @@ class ClassificationRequest(BaseModel):
 class ClassificationResponse(BaseModel):
     severity: str
     required_skills: List[str]
+
+
+class IncidentCreateRequest(BaseModel):
+    description: str
+    location: str
+    expected_severity: str
+    required_skills: List[str]
+
+
+class IncidentCreateResponse(BaseModel):
+    incident_id: str
+    status: str
+
+
+class NotifyRequest(BaseModel):
+    incident_id: str
+    volunteer_ids: List[str]
+    message_override: Optional[str] = None
+
+
+class NotifyResponse(BaseModel):
+    status: str
+    notified_count: int

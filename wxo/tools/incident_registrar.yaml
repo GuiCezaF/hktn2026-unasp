@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Incident Registrar
+  version: 1.0.0
+  description: Registra um novo incidente no sistema gerando o ID automaticamente.
+servers:
+  - url: http://localhost:8000
+paths:
+  /incidents:
+    post:
+      operationId: createIncident
+      summary: Registra o incidente após a triagem inicial.
+      description: >
+        O Agente Principal deve usar esta ferramenta para criar o incidente no banco
+        de dados sem precisar perguntar o ID ao usuário.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - description
+                - location
+                - expected_severity
+                - required_skills
+              properties:
+                description:
+                  type: string
+                  description: Descrição do incidente.
+                location:
+                  type: string
+                  description: Endereço ou referência de localização.
+                expected_severity:
+                  type: string
+                  enum: [critical, moderate, low]
+                required_skills:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: Incidente criado com sucesso.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  incident_id:
+                    type: string
+                    description: O ID gerado para o incidente (ex. inc-004).
+                  status:
+                    type: string
