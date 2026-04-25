@@ -12,7 +12,7 @@ Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já exist
 - [x] **T1.3 - Specs OpenAPI YAML para as Tools:** Criar a pasta `wxo/tools/` e os respectivos arquivos de especificação YAML (incident_classifier.yaml, volunteer_matcher.yaml, geo_context.yaml).
 
 ## Marco 2: Núcleo watsonx Orchestrate
-- [ ] **T2.1 - Criar Agente Principal + Knowledge Base:** Criar documento `docs/knowledge_crisis_protocols.md` e configurar o agente CrisisCoordinator no painel do wxO.
+- [x] **T2.1 - Criar Agente Principal + Knowledge Base:** Agente `CrisisCoordinator` criado e Knowledge Base configurada.
 - [ ] **T2.2 - Importar e Registrar Tools no wxO:** Importar os arquivos YAML no wxO para a toolset do agente principal.
 - [ ] **T2.3 - Criar Agente Colaborador (Matcher de Voluntários):** Configurar o VolunteerMatcher no wxO e associar sua Tool, adicionando-o como colaborador do agente principal.
 - [ ] **T2.4 - Testes de Fluxo Completo no wxO:** Testar todos os fluxos e documentar resultados em `docs/test-results.md`.
