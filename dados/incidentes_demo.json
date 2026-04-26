@@ -18,11 +18,11 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering",
-      "drone_operator",
-      "psychological_support"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural",
+      "operador de drone",
+      "apoio psicológico"
     ],
     "affected_people": 45,
     "affected_buildings": 3,
@@ -50,9 +50,9 @@
     },
     "expected_severity": "moderate",
     "required_skills": [
-      "structural_engineering",
-      "gis_mapping",
-      "communication"
+      "engenharia estrutural",
+      "mapeamento gis",
+      "comunicação"
     ],
     "affected_people": 12,
     "affected_buildings": 2,
@@ -80,8 +80,8 @@
     },
     "expected_severity": "low",
     "required_skills": [
-      "gis_mapping",
-      "structural_engineering"
+      "mapeamento gis",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -109,8 +109,8 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "first_aid",
-      "search_and_rescue"
+      "primeiros socorros",
+      "busca e resgate"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -138,8 +138,8 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "first_aid",
-      "search_and_rescue"
+      "primeiros socorros",
+      "busca e resgate"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -167,8 +167,8 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "first_aid",
-      "search_and_rescue"
+      "primeiros socorros",
+      "busca e resgate"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -196,7 +196,7 @@
     },
     "expected_severity": "low",
     "required_skills": [
-      "gis_mapping"
+      "mapeamento gis"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -224,7 +224,7 @@
     },
     "expected_severity": "low",
     "required_skills": [
-      "gis_mapping"
+      "mapeamento gis"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -252,7 +252,7 @@
     },
     "expected_severity": "low",
     "required_skills": [
-      "gis_mapping"
+      "mapeamento gis"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -280,9 +280,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -310,9 +310,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -340,9 +340,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -370,9 +370,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -400,9 +400,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -430,9 +430,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -460,8 +460,8 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "logistics"
+      "busca e resgate",
+      "logística"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -519,9 +519,9 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
     ],
     "affected_people": 0,
     "affected_buildings": 0,
@@ -549,9 +549,188 @@
     },
     "expected_severity": "critical",
     "required_skills": [
-      "search_and_rescue",
-      "first_aid",
-      "structural_engineering"
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-020",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento na Rua Brasil, 450, Jardim Amanda. 5 pessoas em risco, solo instável, risco de desabamento.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Rua Brasil, 450, Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-021",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra enorme na encosta, várias casas atingidas, pessoas presas.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Encosta, Hortolandia",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-022",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra enorme na encosta, várias casas atingidas, pessoas presas.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Não especificado",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-023",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra enorme na encosta, várias casas atingidas, pessoas presas.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-024",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra enorme na encosta, várias casas atingidas, pessoas presas.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Não especificado",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-025",
+    "title": "Incidente Automático - critical",
+    "description": "Inundação severa no Jardim Amanda. Necessário apoio logístico e primeiros socorros.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "logistics",
+      "first_aid"
     ],
     "affected_people": 0,
     "affected_buildings": 0,

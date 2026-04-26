@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Risk Analyzer (Vision AI)
+  version: 1.0.0
+  description: Analyzes images of risk areas to identify structural or environmental problems.
+servers:
+  - url: https://e59a-201-93-250-33.ngrok-free.app
+paths:
+  /analyze-risk:
+    post:
+      operationId: analyzeRiskImage
+      summary: Analyzes a risk image.
+      description: >
+        EXTREMELY IMPORTANT: This tool is the Agent's ONLY way to 'see' images. 
+        If the user provides an image attachment or a URL, the Agent MUST use 
+        this tool to analyze it. DO NOT tell the user you cannot see images; 
+        instead, call this tool using the image URL from the message attachments.
+        If the risk_level is 'high' or 'critical', the Agent MUST subsequently call 
+        the incident registration tool using the suggested title and description.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - image_url
+              properties:
+                image_url:
+                  type: string
+                  description: Public URL of the image to be analyzed.
+      responses:
+        '200':
+          description: Analysis completed.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  risk_level:
+                    type: string
+                    description: Identified risk level (low, high, critical).
+                  confidence_score:
+                    type: number
+                  detected_issues:
+                    type: array
+                    items:
+                      type: string
+                  technical_recommendation:
+                    type: string
+                    description: Technical recommendation based on the image.
+                  suggested_incident_title:
+                    type: string
+                    description: Suggested title for a new incident based on the analysis.
+                  suggested_incident_description:
+                    type: string
+                    description: Suggested description for a new incident based on the analysis.
+                  status:
+                    type: string

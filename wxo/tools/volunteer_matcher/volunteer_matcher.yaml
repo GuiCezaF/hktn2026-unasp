@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Matches available volunteers to a specific incident based on required skills and location.
 servers:
-  - url: https://dbe0-201-93-250-33.ngrok-free.app
+  - url: https://e59a-201-93-250-33.ngrok-free.app
     description: Local Mock Server
 paths:
   /volunteers/match/{incident_id}:
@@ -12,8 +12,9 @@ paths:
       operationId: matchVolunteers
       summary: Find matching volunteers for an incident
       description: >
-        Returns a list of volunteers that are the best match for a given incident ID, 
-        considering their skills and geographic proximity.
+        Returns a list of volunteers that are the best match for a given incident ID. 
+        IMPORTANT: Each volunteer has a unique 3-digit ID (e.g. 101, 109). 
+        The Agent MUST use this ID when calling the notification tool.
       parameters:
         - name: incident_id
           in: path
@@ -33,6 +34,7 @@ paths:
                   properties:
                     id:
                       type: string
+                      description: The unique 3-digit volunteer ID. MUST be used for notifications.
                     name:
                       type: string
                     phone:

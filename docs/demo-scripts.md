@@ -24,7 +24,7 @@ Este documento contem os roteiros passo a passo para a demonstracao do sistema d
 3. **Analise e Classificacao (Sistema):**
    - O agente principal aciona a **Tool A (Contexto Geografico)** para buscar o historico da encosta na Brasilandia.
    - O agente principal aciona a **Tool B (Classificacao)**.
-   - *Agente:* "Entendido. Este incidente foi classificado como **CRITICO** devido ao risco imediato a vida e infraestrutura (historico de alto risco na Brasilandia). As habilidades necessarias para esta operacao sao: Busca e Salvamento, Engenharia Estrutural, Primeiros Socorros e Apoio Psicologico."
+   - *Agente:* "Entendido. Este incidente foi classificado como **CRITICO** devido ao risco imediato a vida e infraestrutura (historico de alto risco na Brasilandia). As habilidades necessarias para esta operacao sao: busca e resgate, engenharia estrutural, primeiros socorros e apoio psicológico."
 
 4. **Match de Voluntarios (Sistema):**
    - O agente principal delega a tarefa para o **Agente Colaborador (Matcher)**.
@@ -65,7 +65,7 @@ Este documento contem os roteiros passo a passo para a demonstracao do sistema d
 
 4. **Classificacao e Resultado (Sistema):**
    - O agente aciona as **Tools A e B**.
-   - *Agente:* "Obrigado. Com base nessas informacoes, o incidente foi classificado como **MODERADO**. Serao necessarios profissionais com habilidades em Engenharia Estrutural e Mapeamento. Deseja que eu liste os voluntarios mais proximos para essa avaliacao?"
+   - *Agente:* "Obrigado. Com base nessas informacoes, o incidente foi classificado como **MODERADO**. Serao necessarios profissionais com habilidades em engenharia estrutural e mapeamento gis. Deseja que eu liste os voluntarios mais proximos para essa avaliacao?"
 
 5. **Encerramento:**
    - O usuario confirma e o fluxo de match se repete.

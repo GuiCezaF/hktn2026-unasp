@@ -2,17 +2,17 @@ openapi: 3.0.0
 info:
   title: Volunteer Registrar
   version: 1.0.0
-  description: Registra novos voluntários no sistema através do Agente.
+  description: Registers new volunteers in the system through the Agent.
 servers:
-  - url: https://dbe0-201-93-250-33.ngrok-free.app
+  - url: https://e59a-201-93-250-33.ngrok-free.app
 paths:
   /volunteers:
     post:
       operationId: createVolunteer
-      summary: Cadastra um novo voluntário.
+      summary: Registers a new volunteer.
       description: >
-        O Agente deve usar esta ferramenta para cadastrar pessoas que desejam se voluntariar
-        durante a conversa, coletando nome, idade, telefone, e-mail, habilidades e bairro.
+        The Agent should use this tool to register people who want to volunteer
+        during the conversation, collecting name, age, phone, email, skills and neighborhood.
       requestBody:
         required: true
         content:
@@ -29,30 +29,30 @@ paths:
               properties:
                 name:
                   type: string
-                  description: Nome completo do voluntário.
+                  description: Full name of the volunteer.
                 age:
                   type: integer
-                  description: Idade do voluntário.
+                  description: Age of the volunteer.
                 phone:
                   type: string
-                  description: Telefone de contato (preferencialmente WhatsApp).
+                  description: Contact phone (preferably WhatsApp).
                 email:
                   type: string
-                  description: E-mail de contato.
+                  description: Contact email.
                 skills:
                   type: array
                   items:
                     type: string
-                  description: Lista de habilidades (ex. first_aid, logistics, search_and_rescue).
+                  description: List of skills (e.g. first_aid, logistics, search_and_rescue).
                 neighborhood:
                   type: string
-                  description: Bairro de residência em Hortolândia.
+                  description: Neighborhood of residence in Hortolandia.
                 city:
                   type: string
                   default: Hortolandia
       responses:
         '200':
-          description: Voluntário cadastrado com sucesso.
+          description: Volunteer registered successfully.
           content:
             application/json:
               schema:

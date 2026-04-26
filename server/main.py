@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from typing import List
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 
 env_path = Path(__file__).parent / ".env"
@@ -25,6 +26,9 @@ DATA_DIR = os.path.join(BASE_DIR, "dados")
 
 data_service = DataService(DATA_DIR)
 matching_service = MatchingService(data_service)
+
+# Serve static files from the 'dados' directory
+app.mount("/dados", StaticFiles(directory=DATA_DIR), name="dados")
 
 @app.get("/incidents", response_model=List[Incident])
 def get_incidents():
@@ -64,17 +68,17 @@ def classify_incident(request: ClassificationRequest):
     if is_critical:
         return ClassificationResponse(
             severity="critical",
-            required_skills=["search_and_rescue", "first_aid", "structural_engineering"]
+            required_skills=["busca e resgate", "primeiros socorros", "engenharia estrutural"]
         )
     elif is_moderate:
         return ClassificationResponse(
             severity="moderate",
-            required_skills=["structural_engineering", "gis_mapping"]
+            required_skills=["engenharia estrutural", "mapeamento gis"]
         )
     
     return ClassificationResponse(
         severity="low",
-        required_skills=["gis_mapping"]
+        required_skills=["mapeamento gis"]
     )
 
 
@@ -93,11 +97,16 @@ def notify_volunteers(request: NotifyRequest):
     if not incident:
         raise HTTPException(status_code=404, detail="Incident not found")
 
+    # Split string by comma and clean whitespace
+    identifiers = [i.strip() for i in request.volunteer_names_or_ids.split(",") if i.strip()]
+    
     volunteers_to_notify = []
-    for identifier in request.volunteer_ids:
+    for identifier in identifiers:
         found = False
         for v in data_service.get_all_volunteers():
-            if v.id == identifier or v.name.lower() == identifier.lower():
+            # Flexible matching: try exact ID, exact name, or if identifier is part of the name
+            name_match = v.name.lower() == identifier.lower() or identifier.lower() in v.name.lower()
+            if v.id == identifier or name_match:
                 volunteers_to_notify.append(v)
                 found = True
                 break
@@ -119,28 +128,27 @@ def notify_volunteers(request: NotifyRequest):
         if not from_number: missing.append("TWILIO_WHATSAPP_NUMBER")
         print(f"ERRO: Credenciais do Twilio incompletas no .env: {', '.join(missing)}")
         
-        # Modo mock se não tiver credenciais
         return NotifyResponse(status="mock_success_missing_credentials", notified_count=len(volunteers_to_notify))
 
     client = Client(account_sid, auth_token)
     
     count = 0
     for v in volunteers_to_notify:
-        msg_body = request.message_override or f"🚨 ALERTA DEFESA CIVIL 🚨\nOlá {v.name}, precisamos da sua ajuda para um incidente: {incident.title}\nLocal: {incident.location.address}\nPor favor, responda se estiver disponível."
+        msg_body = request.message_override or f"CONVOCACAO VOLUNTARIA - CrisisCoordinator\nOla {v.name}, precisamos da sua ajuda voluntaria para um incidente: {incident.title}\nLocal: {incident.location.address}"
         
-        # Limpar telefone para formato E.164 (simplificado)
-        # O telefone no JSON deve estar como +5511999999999
         to_phone = f"whatsapp:{v.phone}" if not v.phone.startswith("whatsapp:") else v.phone
         
         try:
-            client.messages.create(
+            print(f"Enviando mensagem Twilio para {v.name} ({to_phone})...")
+            message = client.messages.create(
                 body=msg_body,
                 from_=from_number,
                 to=to_phone
             )
+            print(f"Sucesso: Mensagem enviada para {v.name}. SID: {message.sid}\n Mensagem: {message}")
             count += 1
         except Exception as e:
-            print(f"Erro ao enviar para {v.name}: {e}")
+            print(f"FALHA: Erro ao enviar mensagem Twilio para {v.name}: {str(e)}")
 
     return NotifyResponse(
         status="success",
@@ -160,20 +168,24 @@ def analyze_risk(request: ImageAnalysisRequest):
     # Mock de análise de visão computacional
     url = request.image_url.lower()
     
-    if "crack" in url or "rachadura" in url or "fenda" in url:
+    if "cenario_02" in url or "crack" in url or "rachadura" in url or "fenda" in url:
         return ImageAnalysisResponse(
             risk_level="high",
             confidence_score=0.89,
             detected_issues=["Structural cracks", "Wall instability"],
-            technical_recommendation="Evacuar área imediatamente e acionar engenharia estrutural.",
+                    technical_recommendation="Evacuar área imediatamente e acionar engenharia estrutural.",
+            suggested_incident_title="Rachadura Estrutural Crítica Detectada via Imagem",
+            suggested_incident_description="Análise de IA detectou rachaduras estruturais e instabilidade de parede em imagem enviada por cidadão. Risco alto de desabamento.",
             status="success"
         )
-    elif "landslide" in url or "deslizamento" in url:
+    elif "cenario_01" in url or "landslide" in url or "deslizamento" in url:
         return ImageAnalysisResponse(
             risk_level="critical",
             confidence_score=0.95,
             detected_issues=["Soil movement", "Slope instability"],
-            technical_recommendation="Risco iminente de soterramento. Isolamento total do perímetro.",
+                    technical_recommendation="Risco iminente de soterramento. Isolamento total do perímetro.",
+            suggested_incident_title="Deslizamento Iminente Detectado via Imagem",
+            suggested_incident_description="Análise de IA detectou movimento de solo e instabilidade de encosta em imagem enviada por cidadão. Risco crítico de soterramento.",
             status="success"
         )
     else:

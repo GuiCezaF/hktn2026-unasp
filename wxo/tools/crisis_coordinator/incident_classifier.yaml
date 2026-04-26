@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Classifies incident severity and identifies required skills based on the incident description.
 servers:
-  - url: https://dbe0-201-93-250-33.ngrok-free.app
+  - url: https://e59a-201-93-250-33.ngrok-free.app
     description: Local Mock Server
 paths:
   /incidents/classify:
@@ -14,6 +14,8 @@ paths:
       description: >
         Receives a text description of an incident and returns severity classification 
         (critical, moderate, low) along with a list of required skills to respond to it.
+        IMPORTANT: If the user provides an image attachment, DO NOT use this tool. 
+        Instead, you MUST use the Risk Analyzer tool which is specialized for visual risk assessment.
       requestBody:
         required: true
         content:

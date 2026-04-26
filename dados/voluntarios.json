@@ -1,13 +1,13 @@
 [
   {
-    "id": "1",
+    "id": "101",
     "name": "Ana Silva",
     "age": 34,
     "phone": "+5511999990001",
     "email": "ana.silva@demo.org",
     "skills": [
-      "first_aid",
-      "logistics"
+      "primeiros socorros",
+      "logística"
     ],
     "certifications": [
       "SAMU Basic Life Support",
@@ -33,14 +33,14 @@
     "notes": "Experienced in flood and landslide response. Team leader certified."
   },
   {
-    "id": "2",
+    "id": "102",
     "name": "Carlos Mendes",
     "age": 41,
     "phone": "+5511999990002",
     "email": "carlos.mendes@demo.org",
     "skills": [
-      "structural_engineering",
-      "search_and_rescue"
+      "engenharia estrutural",
+      "busca e resgate"
     ],
     "certifications": [
       "CREA Civil Engineering",
@@ -65,14 +65,14 @@
     "notes": "Structural assessment specialist. Experienced with post-landslide building safety evaluation."
   },
   {
-    "id": "3",
+    "id": "103",
     "name": "Beatriz Oliveira",
     "age": 28,
     "phone": "+5511999990003",
     "email": "beatriz.oliveira@demo.org",
     "skills": [
-      "psychological_support",
-      "communication"
+      "apoio psicológico",
+      "comunicação"
     ],
     "certifications": [
       "CRP Psychology License",
@@ -99,14 +99,14 @@
     "notes": "Specializes in trauma support for disaster victims. Fluent in three languages for diverse community outreach."
   },
   {
-    "id": "4",
+    "id": "104",
     "name": "Diego Nascimento",
     "age": 31,
     "phone": "+5511999990004",
     "email": "diego.nascimento@demo.org",
     "skills": [
-      "drone_operator",
-      "gis_mapping"
+      "operador de drone",
+      "mapeamento gis"
     ],
     "certifications": [
       "ANAC Drone Pilot License",
@@ -132,14 +132,14 @@
     "notes": "Operates DJI Mavic 3 for aerial mapping. Produces risk maps within 2 hours of deployment."
   },
   {
-    "id": "5",
+    "id": "105",
     "name": "Fernanda Costa",
     "age": 37,
     "phone": "+5511999990005",
     "email": "fernanda.costa@demo.org",
     "skills": [
-      "first_aid",
-      "search_and_rescue"
+      "primeiros socorros",
+      "busca e resgate"
     ],
     "certifications": [
       "Firefighter Volunteer Cert",
@@ -164,14 +164,14 @@
     "notes": "Volunteer firefighter with extensive field rescue experience in hillside terrain."
   },
   {
-    "id": "6",
+    "id": "106",
     "name": "Gabriel Santos",
     "age": 25,
     "phone": "+5511999990006",
     "email": "gabriel.santos@demo.org",
     "skills": [
-      "logistics",
-      "communication"
+      "logística",
+      "comunicação"
     ],
     "certifications": [
       "Supply Chain Management",
@@ -197,14 +197,14 @@
     "notes": "Coordinates supply distribution. Ham radio certified for communication in areas without cell coverage."
   },
   {
-    "id": "7",
+    "id": "107",
     "name": "Helena Rodrigues",
     "age": 45,
     "phone": "+5511999990007",
     "email": "helena.rodrigues@demo.org",
     "skills": [
-      "gis_mapping",
-      "structural_engineering"
+      "mapeamento gis",
+      "engenharia estrutural"
     ],
     "certifications": [
       "CREA Geotechnical Engineering",
@@ -231,15 +231,15 @@
     "notes": "Geotechnical engineer. Expert in slope stability analysis. Currently deployed at another site."
   },
   {
-    "id": "8",
+    "id": "108",
     "name": "Igor Ferreira",
     "age": 29,
     "phone": "+5511999990008",
     "email": "igor.ferreira@demo.org",
     "skills": [
-      "drone_operator",
-      "communication",
-      "logistics"
+      "operador de drone",
+      "comunicação",
+      "logística"
     ],
     "certifications": [
       "ANAC Drone Pilot License",
@@ -264,17 +264,17 @@
     "notes": "Drone pilot with night-flight certification. Also trained in emergency radio communications."
   },
   {
-    "id": "9",
+    "id": "109",
     "name": "Felipe Z",
     "age": 22,
     "phone": "+5519987624471",
     "email": "contato.guicezafe@gmail.com",
     "skills": [
-      "first_aid",
-      "logistics",
-      "search_and_rescue",
-      "drone_operator",
-      "structural_engineering"
+      "primeiros socorros",
+      "logística",
+      "busca e resgate",
+      "operador de drone",
+      "engenharia estrutural"
     ],
     "certifications": [
       "SAMU Basic Life Support",
@@ -300,7 +300,7 @@
     "notes": "Experienced in flood and landslide response. Team leader certified."
   },
   {
-    "id": "10",
+    "id": "110",
     "name": "Guilherme Cezarino Felipe",
     "age": 22,
     "phone": "+5519981734618",

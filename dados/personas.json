@@ -18,52 +18,64 @@
   },
   "volunteers": [
     {
-      "id": "v1",
+      "id": "101",
       "name": "Ana Silva",
-      "persona_summary": "Experienced logistics coordinator and first aid provider. Team leader with 5 years of disaster response experience. Owns a vehicle and is available full-time during crises. Key volunteer for the happy-path demo: she should appear as a top match for critical incidents requiring first_aid and logistics.",
+      "persona_summary": "Experienced logística coordinator and primeiros socorros provider. Team leader with 5 years of disaster response experience. Owns a vehicle and is available full-time during crises. Key volunteer for the happy-path demo: she should appear as a top match for critical incidents requiring primeiros socorros and logística.",
       "demo_role": "Top match for Scenario 1 (critical landslide). Demonstrates skill-based matching."
     },
     {
-      "id": "v2",
+      "id": "102",
       "name": "Carlos Mendes",
-      "persona_summary": "Senior structural engineer with USAR certification. 10 years of experience and 25 past deployments. The go-to expert for building safety assessment after landslides. Available on weekends and evenings.",
+      "persona_summary": "Senior engenharia estrutural with USAR certification. 10 years of experience and 25 past deployments. The go-to expert for building safety assessment after landslides. Available on weekends and evenings.",
       "demo_role": "Top match for structural assessment in Scenario 1. Demonstrates expertise-based matching."
     },
     {
-      "id": "v3",
+      "id": "103",
       "name": "Beatriz Oliveira",
       "persona_summary": "Young psychologist specialized in crisis intervention and trauma support. Trilingual (Portuguese, English, Spanish). Uses public transport, so proximity scoring may be lower for distant incidents.",
-      "demo_role": "Matched for psychological support in Scenario 1. Demonstrates diverse skill coverage."
+      "demo_role": "Matched for apoio psicológico in Scenario 1. Demonstrates diverse skill coverage."
     },
     {
-      "id": "v4",
+      "id": "104",
       "name": "Diego Nascimento",
-      "persona_summary": "Drone pilot and GIS specialist. Produces aerial risk maps rapidly. Licensed by ANAC. Key for reconnaissance and mapping during the response phase.",
+      "persona_summary": "operador de drone e especialista em mapeamento gis. Produces aerial risk maps rapidly. Licensed by ANAC. Key for reconnaissance and mapping during the response phase.",
       "demo_role": "Matched for aerial mapping in Scenario 1 and 2. Demonstrates tech-enabled volunteering."
     },
     {
-      "id": "v5",
+      "id": "105",
       "name": "Fernanda Costa",
-      "persona_summary": "Volunteer firefighter with wilderness first aid certification. 8 years of rescue experience in hillside terrain. Strong candidate for search and rescue operations.",
-      "demo_role": "Matched for search_and_rescue in Scenario 1. Demonstrates field rescue capability."
+      "persona_summary": "Volunteer firefighter with wilderness primeiros socorros certification. 8 years of rescue experience in hillside terrain. Strong candidate for search and rescue operations.",
+      "demo_role": "Matched for busca e resgate in Scenario 1. Demonstrates field rescue capability."
     },
     {
-      "id": "v6",
+      "id": "106",
       "name": "Gabriel Santos",
-      "persona_summary": "Logistics coordinator with ham radio certification. Young volunteer available full-time. Useful for supply distribution and emergency communication in areas without cell coverage.",
-      "demo_role": "Secondary match for logistics and communication. Demonstrates communication resilience."
+      "persona_summary": "logística coordinator with ham radio certification. Young volunteer available full-time. Useful for supply distribution and emergency comunicação in areas without cell coverage.",
+      "demo_role": "Secondary match for logística and comunicação. Demonstrates comunicação resilience."
     },
     {
-      "id": "v7",
+      "id": "107",
       "name": "Helena Rodrigues",
-      "persona_summary": "Senior geotechnical engineer and GIS expert. 15 years of experience and 35 deployments. Currently unavailable (deployed at another site). Her unavailability demonstrates the system's filtering logic.",
+      "persona_summary": "Senior engenharia geotécnica e especialista em mapeamento gis. 15 years of experience and 35 deployments. Currently unavailable (deployed at another site). Her unavailability demonstrates the system's filtering logic.",
       "demo_role": "Filtered OUT by the matcher due to available=false. Demonstrates availability filtering."
     },
     {
-      "id": "v8",
+      "id": "108",
       "name": "Igor Ferreira",
       "persona_summary": "Drone pilot with night-flight certification and emergency radio training. Available on weekends. Good complementary resource to Diego for larger operations.",
       "demo_role": "Secondary match for drone operations. Demonstrates depth of volunteer pool."
+    },
+    {
+      "id": "109",
+      "name": "Felipe Z",
+      "persona_summary": "Highly skilled volunteer with a wide range of certifications including busca e resgate, primeiros socorros e engenharia estrutural. Based in Jardim Amanda, he is a top responder for critical incidents.",
+      "demo_role": "Top match for critical incidents in Jardim Amanda. Demonstrates high-skill matching."
+    },
+    {
+      "id": "110",
+      "name": "Guilherme Cezarino Felipe",
+      "persona_summary": "Recently registered volunteer via wxO agent. Eager to help with primeiros socorros e logística. Local to Jardim Amanda.",
+      "demo_role": "Demonstrates new volunteer registration through the system."
     }
   ],
   "demo_scenarios": {

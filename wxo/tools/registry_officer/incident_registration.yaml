@@ -2,17 +2,17 @@ openapi: 3.0.0
 info:
   title: Incident Registrar
   version: 1.0.0
-  description: Registra um novo incidente no sistema gerando o ID automaticamente.
+  description: Registers a new incident in the system, generating the ID automatically.
 servers:
-  - url: https://dbe0-201-93-250-33.ngrok-free.app
+  - url: https://e59a-201-93-250-33.ngrok-free.app
 paths:
   /incidents:
     post:
       operationId: createIncident
-      summary: Registra o incidente após a triagem inicial.
+      summary: Registers the incident after the initial screening.
       description: >
-        O Agente Principal deve usar esta ferramenta para criar o incidente no banco
-        de dados sem precisar perguntar o ID ao usuário.
+        The Lead Agent should use this tool to create the incident in the database 
+        without having to ask the user for the ID.
       requestBody:
         required: true
         content:
@@ -27,10 +27,10 @@ paths:
               properties:
                 description:
                   type: string
-                  description: Descrição do incidente.
+                  description: Incident description.
                 location:
                   type: string
-                  description: Endereço ou referência de localização.
+                  description: Address or location reference.
                 expected_severity:
                   type: string
                   enum: [critical, moderate, low]
@@ -40,7 +40,7 @@ paths:
                     type: string
       responses:
         '200':
-          description: Incidente criado com sucesso.
+          description: Incident created successfully.
           content:
             application/json:
               schema:
@@ -48,6 +48,6 @@ paths:
                 properties:
                   incident_id:
                     type: string
-                    description: O ID gerado para o incidente (ex. inc-004).
+                    description: The ID generated for the incident (e.g. inc-004).
                   status:
                     type: string

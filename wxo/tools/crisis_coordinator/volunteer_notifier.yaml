@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Volunteer Notifier
+  version: 1.0.0
+  description: Sends alerts to volunteers via WhatsApp.
+servers:
+  - url: https://e59a-201-93-250-33.ngrok-free.app
+paths:
+  /volunteers/notify:
+    post:
+      operationId: notifyVolunteers
+      summary: Sends an active notification to volunteers for an incident.
+      description: >
+        Uses the Twilio API to fire a WhatsApp message to the
+        list of informed volunteers. The Agent should trigger this as the
+        final coordination step.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - incident_id
+                - volunteer_names_or_ids
+              properties:
+                incident_id:
+                  type: string
+                  description: The incident ID (e.g. inc-00X)
+                volunteer_names_or_ids:
+                  type: string
+                  description: >
+                    Names or IDs of volunteers to notify, separated by commas. 
+                    The Agent should automatically fill this with the names or 3-digit IDs 
+                    of the volunteers found in the matching step (e.g. 'Felipe Z, 110').
+                message_override:
+                  type: string
+                  description: Optional. If you want to send a personalized message.
+      responses:
+        '200':
+          description: Sending result.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  notified_count:
+                    type: integer

@@ -99,7 +99,7 @@ class IncidentCreateResponse(BaseModel):
 
 class NotifyRequest(BaseModel):
     incident_id: str
-    volunteer_ids: List[str]
+    volunteer_names_or_ids: str
     message_override: Optional[str] = None
 
 
@@ -128,4 +128,6 @@ class ImageAnalysisResponse(BaseModel):
     confidence_score: float
     detected_issues: List[str]
     technical_recommendation: str
+    suggested_incident_title: Optional[str] = None
+    suggested_incident_description: Optional[str] = None
     status: str

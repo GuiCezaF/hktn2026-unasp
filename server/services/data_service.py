@@ -89,7 +89,7 @@ class DataService:
             
         return incident
     def create_volunteer(self, request) -> Volunteer:
-        new_id = str(len(self.volunteers) + 1)
+        new_id = str(len(self.volunteers) + 101)
         
         # Mapeamento básico de coordenadas para bairros de Hortolândia
         coords = {

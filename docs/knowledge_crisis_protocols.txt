@@ -39,14 +39,14 @@ Incidents should be classified into one of three severity levels based on the re
 
 The system uses specific skill identifiers to match volunteers to incidents. Below is the official list of recognized skills:
 
-* **first_aid (Primeiros Socorros):** Medical assistance, triage, CPR, and basic life support for injured individuals.
-* **logistics (Logística):** Coordination of supplies (food, water, blankets), transport organization, and managing distribution centers.
-* **drone_operator (Operador de Drone):** Aerial reconnaissance, assessing terrain stability, and locating blocked routes or missing persons from the air.
-* **gis_mapping (Mapeamento GIS):** Geographic Information Systems mapping, analyzing topography, and updating risk area maps based on real-time data.
-* **psychological_support (Apoio Psicológico):** Crisis counseling, comforting victims, and providing mental health first aid to affected families.
-* **structural_engineering (Engenharia Estrutural):** Assessing the stability of buildings, retaining walls, and infrastructure to determine if they are safe to enter or need immediate shoring.
-* **search_and_rescue (Busca e Resgate):** Specialized physical rescue operations, locating and extracting trapped individuals safely.
-* **communication (Comunicação):** Disseminating accurate information, coordinating with local media, and operating radio/communication equipment in areas with poor cellular signal.
+* **primeiros socorros:** Medical assistance, triage, CPR, and basic life support for injured individuals.
+* **logística:** Coordination of supplies (food, water, blankets), transport organization, and managing distribution centers.
+* **operador de drone:** Aerial reconnaissance, assessing terrain stability, and locating blocked routes or missing persons from the air.
+* **mapeamento gis:** Geographic Information Systems mapping, analyzing topography, and updating risk area maps based on real-time data.
+* **apoio psicológico:** Crisis counseling, comforting victims, and providing mental health first aid to affected families.
+* **engenharia estrutural:** Assessing the stability of buildings, retaining walls, and infrastructure to determine if they are safe to enter or need immediate shoring.
+* **busca e resgate:** Specialized physical rescue operations, locating and extracting trapped individuals safely.
+* **comunicação:** Disseminating accurate information, coordinating with local media, and operating radio/communication equipment in areas with poor cellular signal.
 
 ---
 
