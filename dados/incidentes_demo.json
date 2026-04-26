@@ -738,5 +738,65 @@
     "access_conditions": "unknown",
     "status": "open",
     "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-026",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra moderado bloqueando via secundária no Jardim Amanda, solo em movimento, rachaduras profundas.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
+  },
+  {
+    "id": "inc-027",
+    "title": "Incidente Automático - critical",
+    "description": "Deslizamento de terra moderado bloqueando via secundária no Jardim Amanda.",
+    "location": {
+      "lat": -22.85,
+      "lng": -47.22,
+      "neighborhood": "Mock",
+      "city": "Hortolandia",
+      "address": "Jardim Amanda",
+      "reference": ""
+    },
+    "reported_at": "2026-04-25T14:30:00Z",
+    "reporter": {
+      "name": "Agente wxO",
+      "contact": "sistema"
+    },
+    "expected_severity": "critical",
+    "required_skills": [
+      "busca e resgate",
+      "primeiros socorros",
+      "engenharia estrutural"
+    ],
+    "affected_people": 0,
+    "affected_buildings": 0,
+    "weather_conditions": "unknown",
+    "access_conditions": "unknown",
+    "status": "open",
+    "notes": "Criado via ferramenta do wxO."
   }
 ]

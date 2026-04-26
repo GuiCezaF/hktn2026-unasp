@@ -1,6 +1,11 @@
 [tools]
 python = "3.12"
 
+[tasks.install]
+description = "Instala as dependências do projeto"
+dir = ".."
+run = "pip install -r server/requirements.txt"
+
 [tasks.dev]
 description = "Inicia o servidor de desenvolvimento FastAPI"
 dir = ".."

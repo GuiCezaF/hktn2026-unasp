@@ -1,19 +1,19 @@
 from typing import List
-from .data_service import DataService
-from ..models import Volunteer
+from server.domain.repositories import IIncidentRepository, IVolunteerRepository
+from server.domain.entities import Volunteer
 
+class MatchVolunteersUseCase:
+    def __init__(self, incident_repo: IIncidentRepository, volunteer_repo: IVolunteerRepository):
+        self.incident_repo = incident_repo
+        self.volunteer_repo = volunteer_repo
 
-class MatchingService:
-    def __init__(self, data_service: DataService):
-        self.data_service = data_service
-
-    def match_volunteers_for_incident(self, incident_id: str) -> List[Volunteer]:
-        incident = self.data_service.get_incident_by_id(incident_id)
+    def execute(self, incident_id: str) -> List[Volunteer]:
+        incident = self.incident_repo.get_by_id(incident_id)
         if not incident:
             return []
 
         required_skills = set(incident.required_skills)
-        all_volunteers = self.data_service.get_all_volunteers()
+        all_volunteers = self.volunteer_repo.get_all()
         matched_volunteers = []
 
         for volunteer in all_volunteers:

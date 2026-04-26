@@ -3,7 +3,7 @@
 Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já existentes no projeto, aqui está o que falta implementar:
 
 ## Marco 0: Enquadramento do Projeto
-- [ ] **T0.1 - Documento de Visão e Alinhamento:** Criar o arquivo `docs/visao.md` conectando os 4 desafios listados na temática com as funcionalidades do sistema.
+- [x] **T0.1 - Documento de Visão e Alinhamento:** Criar o arquivo `docs/visao.md` conectando os 4 desafios listados na temática com as funcionalidades do sistema. ✅ 2026-04-26
 - [x] **T0.2 - Personas, Dados e Roteiros da Demo:** Arquivos criados (`dados/personas.json`, `dados/incidentes_demo.json`, `docs/demo-scripts.md`).
 
 ## Marco 1: Dados Mock e Servidor API
@@ -25,12 +25,12 @@ Baseado no arquivo `implementation_plan.md` e na análise dos arquivos já exist
 
 ## Marco 4: Funcionalidades Avançadas
 - [x] **T5.1 - Cadastro Autônomo de Voluntários:** Criar endpoint `POST /volunteers` e tool para permitir que novos voluntários se cadastrem conversando com o Agente. ✅ 2026-04-25
-- [ ] **T5.2 - Avaliação de Risco via Imagem:** Implementar tool que recebe uma URL de imagem (enviada pelo WhatsApp), utiliza uma IA de visão (ou mock estruturado) para identificar rachaduras ou deslizamentos e retorna uma recomendação técnica.
-	- [ ] Falta testar
+- [x] **T5.2 - Avaliação de Risco via Imagem:** Implementar tool que recebe uma URL de imagem (enviada pelo WhatsApp), utiliza uma IA de visão (ou mock estruturado) para identificar rachaduras ou deslizamentos e retorna uma recomendação técnica. ✅ 2026-04-26
+	- [x] Falta testar ✅ 2026-04-26
 
 ## Marco 5: Entrega e Demo
 - [ ] **T4.1 - README e Documentação Final:** Atualizar o README com arquitetura e problema. Criar `.gitignore` e `.env.example`. (Em progresso: .gitignore e .env.example criados).
-- [ ] **T4.2 - Checklist Pré-Gravação:** Validar se a API mock está online, ferramentas wxO estão ativas e fluxos não têm falhas. ✅ 2026-04-25 (Validados via Agente e WhatsApp).
+- [x] **T4.2 - Checklist Pré-Gravação:** Validar se a API mock está online, ferramentas wxO estão ativas e fluxos não têm falhas. ✅ 2026-04-25 (Validados via Agente e WhatsApp). ✅ 2026-04-26
 
 
 ## Marco 6: Entrega Final
