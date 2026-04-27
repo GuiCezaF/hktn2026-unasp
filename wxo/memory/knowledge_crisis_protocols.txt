@@ -3,6 +3,18 @@
 ## Overview
 This document outlines the standard operating procedures, severity classification criteria, and volunteer skill requirements for coordinating responses to landslide incidents. It is intended to serve as the primary knowledge base for the CrisisCoordinator agent in the watsonx Orchestrate environment.
 
+## 0. Mensagens urgentes e relatos humanos (prioridade máxima)
+
+Quando o texto do usuário indicar **risco imediato à vida** — por exemplo: deslizamento, terra caindo, prédio ou casa **rangendo**, rachaduras que pioram, **desabamento** iminente, **“tem gente dentro”**, pessoas presas, feridos, gritos de socorro, mensagens curtas com erros de digitação ou sem pontuação:
+
+1. **Não bloqueie o fluxo com checklist** (número exato da casa, CEP, quantidade precisa de pessoas, fotos ou links). Quem relata pode estar em pânico, com pouca bateria ou sinal instável.
+2. **Infira** local a partir de **qualquer fragmento** útil: rua, bairro, cidade, ponto de referência (“perto da padaria”, “bloco verde”). Se só houver texto solto, use-o como `location` no registro do incidente; refine depois se novas mensagens chegarem.
+3. **Na mesma conversa**, sem esperar “tudo preenchido”: classifique a severidade, **registre o incidente** com os dados inferidos e **busque voluntários** compatíveis. Ações de backoffice vêm antes de pedir mais detalhes.
+4. **Pergunta única e mínima** apenas quando **não existir nenhuma pista geográfica** (nem bairro, nem cidade, nem nome de lugar). Uma pergunta curta; nunca uma lista de três ou mais itens obrigatórios antes de agir.
+5. **Tom da resposta:** uma frase de acolhimento; em seguida confirme **em linguagem natural** o que foi entendido (local aproximado, tipo de risco); declare que **o registro e a mobilização já foram iniciados** ou estão em curso.
+
+Palavras soltas (“ajuda”, “por favor”, “tá caindo”) somadas a um bairro ou rua já são informação suficiente para o primeiro ciclo de ferramentas.
+
 ## 1. Severity Classification Criteria
 
 Incidents should be classified into one of three severity levels based on the reported conditions:
@@ -54,8 +66,8 @@ The system uses specific skill identifiers to match volunteers to incidents. Bel
 
 When a new incident is reported, the following steps must be taken:
 
-1. **Information Gathering:** Extract the exact location, visual indicators of the landslide (e.g., amount of earth moved, structural damage), and number of affected people.
-2. **Severity Assessment:** Apply the Severity Classification Criteria (Critical, Moderate, Low) based on the gathered information.
+1. **Information gathering (infer-first):** Extract whatever location and risk signals exist, including partial or informal phrasing. For **critical** signals (Section 0), treat missing numbers or media as normal; do not delay tools waiting for “complete” data.
+2. **Severity Assessment:** Apply the Severity Classification Criteria (Critical, Moderate, Low) based on the gathered or inferred information.
 3. **Skill Identification:** Determine the top 2-3 most critical volunteer skills required for the initial response based on the severity and specific details of the incident.
 4. **Volunteer Matching:** Use the matching system to find available volunteers who possess the required skills and are geographically close to the incident.
 5. **Notification:** Alert the selected volunteers with a concise summary of the incident, required actions, and safety protocols.

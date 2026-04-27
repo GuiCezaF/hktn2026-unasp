@@ -2,6 +2,24 @@ from typing import List
 from server.domain.repositories import IIncidentRepository, IVolunteerRepository
 from server.domain.entities import Volunteer
 
+# Slugs em inglês (ex.: wxO / OpenAPI) alinhados ao vocabulário de dados/voluntarios.json
+_SKILL_ALIASES = {
+    "search_and_rescue": "busca e resgate",
+    "first_aid": "primeiros socorros",
+    "structural_engineering": "engenharia estrutural",
+    "logistics": "logística",
+    "gis_mapping": "mapeamento gis",
+    "drone_operator": "operador de drone",
+    "psychological_support": "apoio psicológico",
+    "communication": "comunicação",
+}
+
+
+def _canonical_skill(skill: str) -> str:
+    key = skill.strip().lower()
+    return _SKILL_ALIASES.get(key, key)
+
+
 class MatchVolunteersUseCase:
     def __init__(self, incident_repo: IIncidentRepository, volunteer_repo: IVolunteerRepository):
         self.incident_repo = incident_repo
@@ -12,7 +30,7 @@ class MatchVolunteersUseCase:
         if not incident:
             return []
 
-        required_skills = set(incident.required_skills)
+        required_skills = {_canonical_skill(s) for s in incident.required_skills}
         all_volunteers = self.volunteer_repo.get_all()
         matched_volunteers = []
 
@@ -20,7 +38,7 @@ class MatchVolunteersUseCase:
             if not volunteer.available:
                 continue
 
-            volunteer_skills = set(volunteer.skills)
+            volunteer_skills = {_canonical_skill(s) for s in volunteer.skills}
             matching_skills = required_skills.intersection(volunteer_skills)
             
             if matching_skills:
